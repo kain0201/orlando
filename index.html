@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ing. Orlando Bernal Y. — Trayectoria Profesional & Portafolio de Ingeniería Mecánica</title>
+<meta name="description" content="Ingeniero Mecánico con más de 22 años de experiencia en dibujo, diseño mecánico 3D, ensambles, planos de fabricación y repotenciación de maquinaria industrial. Bogotá, Colombia.">
+<meta name="theme-color" content="#0f274a">
+
+<!-- Open Graph / Redes Sociales -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ing. Orlando Bernal Y. — Portafolio de Ingeniería Mecánica y Diseño 3D">
+<meta property="og:description" content="Especialista en Diseño Mecánico, Modelado 3D (Solid Edge, AutoCAD), Planos de Fabricación y Maquinaria Industrial. Bogotá, Colombia.">
+
+<style>
+:root{
+  --azul:#0f274a;
+  --azul-medio:#1e4a8f;
+  --azul-claro:#2b66bf;
+  --azul-brillo:#4d8bf5;
+  --dorado:#c29938;
+  --dorado-brillo:#dfb755;
+  --dorado-fondo:rgba(194,153,56,0.12);
+  --fondo:#f3f6fa;
+  --fondo-alt:#e8edf5;
+  --tarjeta:#ffffff;
+  --tarjeta-borde:#e2e8f0;
+  --texto:#1a2533;
+  --texto-sec:#485b73;
+  --texto-mut:#71839b;
+  --sombra:0 4px 20px rgba(15,39,74,.07);
+  --sombra-alta:0 14px 34px rgba(15,39,74,.14);
+  --radio:12px;
+  --radio-sm:8px;
+  --verde:#10b981;
+  --verde-oscuro:#059669;
+}
+
+body.oscuro{
+  --azul:#8fb4ff;
+  --azul-medio:#2a579a;
+  --azul-claro:#6da3ff;
+  --azul-brillo:#93bbff;
+  --dorado:#e5c158;
+  --dorado-brillo:#f3d67f;
+  --dorado-fondo:rgba(229,193,88,0.12);
+  --fondo:#0a101d;
+  --fondo-alt:#111929;
+  --tarjeta:#152033;
+  --tarjeta-borde:#20314d;
+  --texto:#e5edf8;
+  --texto-sec:#a8bbd4;
+  --texto-mut:#6c82a1;
+  --sombra:0 4px 20px rgba(0,0,0,.45);
+  --sombra-alta:0 14px 34px rgba(0,0,0,.65);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;background:var(--fondo);color:var(--texto);line-height:1.6;transition:background .3s,color .3s;overflow-x:hidden}
+body.modal-open{overflow:hidden}
+
+#topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(15,39,74,.92);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:10px 24px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+}
+body.oscuro #topbar{background:rgba(10,16,29,.94);border-bottom:1px solid rgba(255,255,255,.05)}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+.brand-badge{background:linear-gradient(135deg,var(--dorado),#e9cb72);color:#0f274a;font-weight:900;font-size:.78rem;padding:3px 7px;border-radius:6px;letter-spacing:1px}
+.brand-name{color:#fff;font-weight:700;font-size:.9rem;letter-spacing:.5px;white-space:nowrap}
+.brand-name span{color:var(--dorado-brillo)}
+
+nav#menu{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav#menu::-webkit-scrollbar{display:none}
+nav#menu a{color:#c4d7f5;text-decoration:none;font-size:.82rem;font-weight:500;padding:6px 12px;border-radius:20px;white-space:nowrap;transition:.2s}
+nav#menu a:hover,nav#menu a.activo{background:rgba(255,255,255,.14);color:#fff}
+
+.acciones-top{display:flex;align-items:center;gap:8px}
+.btn-icon{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
+  color:#fff;font-size:1rem;width:36px;height:36px;border-radius:50%;
+  cursor:pointer;transition:.25s;display:flex;align-items:center;justify-content:center;
+}
+.btn-icon:hover{background:var(--dorado);border-color:var(--dorado);color:#0f274a;transform:translateY(-2px)}
+#selIdioma{
+  background:rgba(255,255,255,.15);color:#fff;
+  border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:20px;
+  font-size:.82rem;font-weight:700;cursor:pointer;outline:none;transition:.2s;
+}
+#selIdioma:hover{background:rgba(255,255,255,.25)}
+#selIdioma option{background:#0f274a;color:#fff}
+
+header{
+  background:radial-gradient(ellipse at top,#1e4a8f 0%,#0f274a 65%,#091629 100%);
+  color:#fff;padding:120px 20px 65px;text-align:center;position:relative;overflow:hidden;
+}
+header::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(to right,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:36px 36px;opacity:.6;
+}
+header>*{position:relative;z-index:2}
+.header-pill{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);padding:4px 14px;border-radius:30px;
+  font-size:.78rem;color:#b9d5ff;margin-bottom:14px;
+}
+.header-pill .punto{width:8px;height:8px;border-radius:50%;background:var(--verde);box-shadow:0 0 8px var(--verde)}
+header h1{font-size:clamp(1.7rem,4.8vw,2.8rem);font-weight:800;letter-spacing:1px;text-shadow:0 2px 10px rgba(0,0,0,.3)}
+header .cargo{
+  color:var(--dorado-brillo);font-weight:700;font-size:clamp(.95rem,2.2vw,1.25rem);
+  letter-spacing:2px;margin:6px 0 16px;text-transform:uppercase;
+}
+
+header .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:960px;margin:0 auto 18px}
+.tag-btn{
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);
+  padding:7px 15px;border-radius:20px;font-size:.82rem;color:#e1edff;
+  cursor:pointer;transition:.25s;display:inline-flex;align-items:center;gap:6px;
+  font-family:inherit;font-weight:600;user-select:none;
+}
+.tag-btn:hover{
+  background:var(--dorado);color:#0f274a;border-color:var(--dorado);
+  transform:translateY(-2px);box-shadow:0 4px 14px rgba(194,153,56,.35);
+}
+.tag-btn .flecha{font-size:.75rem;color:var(--dorado-brillo);transition:.2s}
+.tag-btn:hover .flecha{color:#0f274a}
+
+.hero-contactos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:20px auto 14px}
+.btn-cta{
+  display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:30px;
+  font-size:.86rem;font-weight:600;text-decoration:none;cursor:pointer;border:none;
+  transition:.25s;box-shadow:0 4px 14px rgba(0,0,0,.2);
+}
+.btn-cta-pri{background:linear-gradient(135deg,var(--dorado),#d6a73a);color:#0f274a}
+.btn-cta-pri:hover{background:linear-gradient(135deg,#d6a73a,#efc65e);transform:translateY(-2px);box-shadow:0 6px 18px rgba(194,153,56,.4)}
+.btn-cta-sec{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.btn-cta-sec:hover{background:rgba(255,255,255,.22);transform:translateY(-2px)}
+.matricula{
+  margin-top:14px;display:inline-block;background:var(--dorado-fondo);
+  border:1px solid rgba(194,153,56,.4);color:#ffde8a;padding:6px 18px;
+  border-radius:8px;font-size:.82rem;font-weight:500;
+}
+
+.contador-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;max-width:860px;margin:32px auto 0}
+.contador-box{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+  padding:14px 10px;border-radius:12px;backdrop-filter:blur(4px);
+  cursor:pointer;transition:.3s;text-decoration:none;display:block;color:inherit;
+}
+.contador-box:hover{transform:translateY(-4px);background:rgba(255,255,255,.14);border-color:var(--dorado)}
+.contador-box b{display:block;font-size:1.85rem;color:var(--dorado-brillo);line-height:1}
+.contador-box small{color:#c4d7f5;font-size:.78rem;margin-top:4px;display:block}
+.contador-box .hint{font-size:.68rem;color:var(--dorado);display:block;margin-top:4px;font-weight:600}
+
+main{max-width:1040px;margin:auto;padding:36px 20px 80px}
+section{margin-bottom:52px;opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out}
+section.visible{opacity:1;transform:none}
+
+h2{
+  color:var(--azul);font-size:1.35rem;font-weight:700;letter-spacing:.5px;
+  border-bottom:2px solid var(--azul-medio);padding-bottom:10px;margin-bottom:22px;
+  display:flex;align-items:center;gap:10px;
+}
+body.oscuro h2{color:var(--azul-brillo);border-color:var(--azul-medio)}
+h2 .num{
+  background:linear-gradient(135deg,var(--azul-medio),var(--azul-claro));
+  color:#fff;font-size:.8rem;font-weight:800;width:28px;height:28px;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+body.oscuro h2 .num{background:linear-gradient(135deg,var(--azul),var(--azul-brillo));color:#0a101d}
+
+.tarjeta{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);
+  border-radius:var(--radio);box-shadow:var(--sombra);padding:26px;
+  margin-bottom:18px;transition:.3s;border-left:4px solid var(--azul-claro);
+}
+.tarjeta:hover{box-shadow:var(--sombra-alta);transform:translateY(-2px)}
+
+#perfilText p{margin-bottom:12px;color:var(--texto-sec);line-height:1.68}
+#perfilText strong{color:var(--texto)}
+#perfilText em{color:var(--dorado);font-style:normal;font-weight:600}
+
+@keyframes destelloSuave {
+  0% { transform:scale(1); box-shadow:0 0 0 rgba(194,153,56,0); border-color:var(--tarjeta-borde); }
+  25% { transform:scale(1.02); box-shadow:0 0 26px rgba(194,153,56,.7); border-color:var(--dorado); background:var(--dorado-fondo); }
+  100% { transform:scale(1); box-shadow:0 4px 20px rgba(15,39,74,.07); }
+}
+.destello-activo{
+  animation:destelloSuave 2.6s ease-out;
+  border-color:var(--dorado)!important;
+}
+
+.servicios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.servicio-card{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);
+  border-radius:var(--radio);padding:22px 20px;box-shadow:var(--sombra);
+  display:flex;flex-direction:column;transition:.3s;position:relative;
+  border-top:4px solid var(--azul-claro);
+}
+.servicio-card:hover{transform:translateY(-5px);box-shadow:var(--sombra-alta);border-top-color:var(--dorado)}
+.servicio-badge{
+  font-size:.68rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;
+  color:var(--dorado);margin-bottom:6px;display:block;
+}
+.servicio-card h3{font-size:1.02rem;color:var(--azul);margin-bottom:8px;line-height:1.35}
+body.oscuro .servicio-card h3{color:var(--azul-brillo)}
+.servicio-card p{font-size:.85rem;color:var(--texto-sec);margin-bottom:14px;flex-grow:1;line-height:1.5}
+.servicio-items{list-style:none;padding:0;margin:0 0 18px;font-size:.8rem;color:var(--texto-sec)}
+.servicio-items li{margin-bottom:6px;display:flex;align-items:flex-start;gap:6px}
+.servicio-items li::before{content:'✓';color:var(--dorado);font-weight:800}
+.btn-servicio-mail{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  background:var(--azul-medio);color:#fff;text-decoration:none;padding:9px 14px;
+  border-radius:20px;font-size:.82rem;font-weight:700;transition:.2s;
+  box-shadow:0 3px 10px rgba(15,39,74,.25);
+}
+.btn-servicio-mail:hover{background:var(--azul-claro);transform:scale(1.02)}
+
+.sectores-instruccion{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:14px;font-size:.86rem;color:var(--texto-sec);flex-wrap:wrap;gap:8px;
+}
+.sectores-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.sector-item{
+  background:var(--fondo-alt);border:1px solid var(--tarjeta-borde);
+  padding:12px 14px;border-radius:var(--radio-sm);font-weight:600;font-size:.86rem;
+  border-left:3px solid var(--dorado);display:flex;align-items:center;gap:10px;
+  transition:.25s;color:var(--texto);cursor:pointer;user-select:none;
+}
+.sector-item:hover{
+  background:var(--azul-medio);color:#fff;border-left-color:#fff;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(15,39,74,.15);
+}
+.sector-item .hint-ir{font-size:.72rem;color:var(--dorado);margin-left:auto;opacity:.9}
+.sector-item:hover .hint-ir{color:#fff}
+
+.acordeon, .emp{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);
+  border-radius:var(--radio);overflow:hidden;margin-bottom:12px;
+  box-shadow:var(--sombra);transition:.25s;
+}
+.acordeon .cab, .emp .cab{
+  padding:16px 20px;cursor:pointer;display:flex;justify-content:space-between;
+  align-items:center;font-weight:700;color:var(--azul);user-select:none;transition:.2s;
+}
+body.oscuro .acordeon .cab, body.oscuro .emp .cab{color:var(--azul-brillo)}
+.acordeon .cab:hover, .emp .cab:hover{background:rgba(43,102,191,.06);padding-left:24px}
+.acordeon .cuerpo, .emp .cuerpo{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(0,1,0,1);padding:0 20px}
+.acordeon.abierto .cuerpo, .emp.abierto .cuerpo{max-height:2200px;padding:0 20px 20px;transition:max-height .5s ease-in-out}
+.acordeon .icono, .emp .icono{
+  font-size:1.1rem;width:28px;height:28px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(43,102,191,.1);color:var(--azul-claro);transition:transform .3s;
+}
+.acordeon.abierto .icono, .emp.abierto .icono{transform:rotate(45deg);background:var(--dorado);color:#0f274a}
+
+.timeline{position:relative;padding-left:32px}
+.timeline::before{
+  content:'';position:absolute;left:10px;top:6px;bottom:6px;width:3px;
+  background:linear-gradient(var(--azul-claro),var(--dorado));border-radius:3px;
+}
+.emp{position:relative}
+.emp::before{
+  content:'';position:absolute;left:-28px;top:22px;width:13px;height:13px;
+  border-radius:50%;background:var(--dorado);border:3px solid var(--fondo);z-index:2;
+}
+.emp .cab{display:block}
+.emp .titulo-exp{display:flex;justify-content:space-between;align-items:flex-start;width:100%;gap:12px}
+.emp h3{font-size:1rem;color:var(--azul);line-height:1.3}
+body.oscuro .emp h3{color:var(--azul-brillo)}
+.emp .sub{font-size:.82rem;color:var(--dorado);font-weight:600;margin-top:3px}
+.emp .fecha{font-size:.76rem;color:var(--texto-mut);font-weight:500;white-space:nowrap}
+.emp .cuerpo ul{padding-left:20px;margin-top:10px}
+.emp .cuerpo li{margin-bottom:8px;font-size:.92rem;color:var(--texto-sec)}
+.emp .cuerpo strong{color:var(--texto)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip-btn{
+  font-style:normal;background:rgba(43,102,191,.1);color:var(--azul-claro);
+  font-size:.82rem;font-weight:600;padding:7px 15px;border-radius:18px;
+  border:1px solid rgba(43,102,191,.2);transition:.2s;cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;
+}
+body.oscuro .chip-btn{color:var(--azul-brillo);border-color:rgba(109,163,255,.25)}
+.chip-btn:hover{background:var(--dorado);color:#0f274a;border-color:var(--dorado);transform:translateY(-2px)}
+
+.proyectos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+.proyecto{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);
+  border-radius:var(--radio);box-shadow:var(--sombra);padding:0;
+  cursor:pointer;position:relative;transition:.3s;overflow:hidden;display:flex;flex-direction:column;
+}
+.proyecto:hover{transform:translateY(-6px);box-shadow:var(--sombra-alta);border-color:var(--dorado)}
+.proyecto .canvas-cont{
+  height:165px;width:100%;background:linear-gradient(135deg,#071220 0%,#0f223d 100%);
+  position:relative;display:flex;align-items:center;justify-content:center;
+  border-bottom:3px solid var(--dorado);overflow:hidden;
+}
+.proyecto .svg-tech{width:100%;height:100%;display:block}
+.proyecto .icono-pro{
+  position:absolute;bottom:10px;right:12px;font-size:1.25rem;background:var(--tarjeta);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.3);border:2px solid var(--dorado);
+}
+.proyecto-body{padding:18px 20px;flex:1;display:flex;flex-direction:column}
+.proyecto small{color:var(--dorado);font-weight:700;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.proyecto h3{font-size:.98rem;color:var(--azul);line-height:1.35;margin-bottom:8px}
+body.oscuro .proyecto h3{color:var(--azul-brillo)}
+.proyecto p{font-size:.86rem;color:var(--texto-sec);line-height:1.55}
+
+.proy-star-preview{
+  margin-top:10px;padding-top:10px;border-top:1px dashed var(--tarjeta-borde);
+  font-size:.78rem;color:var(--texto-sec);display:flex;flex-direction:column;gap:4px;
+}
+.proy-star-preview b{color:var(--azul)}
+body.oscuro .proy-star-preview b{color:var(--dorado-brillo)}
+.proyecto .badge-sector{
+  margin-top:auto;padding-top:12px;display:flex;align-items:center;justify-content:space-between;
+  font-size:.74rem;color:var(--texto-mut);border-top:1px solid var(--tarjeta-borde);
+}
+
+.filtro-busqueda-wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:16px}
+.filtros{display:flex;flex-wrap:wrap;gap:8px}
+.filtros button{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);color:var(--texto-sec);
+  padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.8rem;font-weight:600;transition:.2s;
+}
+.filtros button:hover{background:var(--azul-claro);color:#fff;border-color:var(--azul-claro)}
+.filtros button.activo{background:var(--azul-medio);border-color:var(--azul-medio);color:#fff}
+.input-busq{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);color:var(--texto);
+  padding:7px 14px;border-radius:20px;font-size:.82rem;outline:none;transition:.2s;width:220px;
+}
+.input-busq:focus{border-color:var(--azul-claro);box-shadow:0 0 0 3px rgba(43,102,191,.15)}
+
+.tech{display:flex;flex-wrap:wrap;gap:8px}
+.tech span{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);color:var(--texto);
+  padding:7px 14px;border-radius:8px;font-size:.84rem;font-weight:500;
+  transition:.25s;border-left:3px solid var(--dorado);box-shadow:var(--sombra);
+  cursor:pointer;user-select:none;
+}
+.tech span:hover{background:var(--azul-medio);color:#fff;transform:translateY(-3px)}
+.tech span.oculto{display:none}
+
+.forta{margin-bottom:16px}
+.forta .fila{display:flex;justify-content:space-between;font-size:.88rem;font-weight:600;margin-bottom:5px;color:var(--texto)}
+.forta .pista{height:8px;background:var(--fondo-alt);border-radius:10px;overflow:hidden}
+.forta .barra{height:100%;width:0;background:linear-gradient(90deg,var(--azul-claro),var(--dorado));border-radius:10px;transition:width 1.2s cubic-bezier(0.1,0.5,0.1,1)}
+
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(8,16,30,.78);
+  display:none;align-items:center;justify-content:center;z-index:300;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:20px;
+}
+.modal-overlay.abierto{display:flex}
+.modal-caja{
+  background:var(--tarjeta);border:1px solid var(--tarjeta-borde);
+  border-radius:var(--radio);padding:28px;max-width:620px;width:100%;
+  position:relative;animation:popIn .3s ease-out;box-shadow:0 20px 40px rgba(0,0,0,.4);
+  max-height:92vh;overflow-y:auto;
+}
+@keyframes popIn{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-caja .cerrar{
+  position:absolute;top:14px;right:16px;font-size:1.3rem;cursor:pointer;
+  color:var(--texto-mut);width:32px;height:32px;display:flex;align-items:center;
+  justify-content:center;border-radius:50%;transition:.2s;
+}
+.modal-caja .cerrar:hover{background:var(--fondo-alt);color:var(--texto)}
+.modal-caja h3{color:var(--azul);margin-bottom:6px;font-size:1.25rem}
+body.oscuro .modal-caja h3{color:var(--azul-brillo)}
+
+.modal-star-box{
+  background:var(--fondo);border-radius:8px;padding:14px;margin:12px 0;
+  border-left:4px solid var(--dorado);font-size:.88rem;
+}
+.modal-star-box strong{color:var(--azul);display:block;margin-bottom:3px;font-size:.82rem;text-transform:uppercase}
+body.oscuro .modal-star-box strong{color:var(--dorado-brillo)}
+
+.modal-enlaces{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.modal-enlaces a, .modal-enlaces button{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px;border-radius:10px;font-size:.9rem;font-weight:600;
+  text-decoration:none;border:none;cursor:pointer;transition:.2s;
+}
+.m-btn-pri{background:var(--azul-medio);color:#fff}
+.m-btn-pri:hover{background:var(--azul-claro);transform:scale(1.02)}
+.m-btn-sec{background:var(--fondo-alt);color:var(--texto);border:1px solid var(--tarjeta-borde)}
+.m-btn-sec:hover{background:var(--dorado-fondo);color:var(--dorado);border-color:var(--dorado)}
+
+#toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);
+  background:rgba(15,39,74,.95);color:#fff;border:1px solid var(--dorado);
+  padding:10px 22px;border-radius:30px;font-size:.85rem;font-weight:600;
+  box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:400;pointer-events:none;
+  transition:transform .3s ease-out,opacity .3s;opacity:0;display:flex;align-items:center;gap:8px;
+}
+#toast.ver{transform:translateX(-50%) translateY(0);opacity:1}
+
+#btnArriba{
+  position:fixed;bottom:24px;right:24px;background:var(--azul-medio);color:#fff;
+  border:none;width:44px;height:44px;border-radius:50%;font-size:1.2rem;
+  cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:90;
+  box-shadow:var(--sombra);display:flex;align-items:center;justify-content:center;
+}
+#btnArriba.ver{opacity:1;pointer-events:auto}
+#btnArriba:hover{background:var(--dorado);color:#0f274a;transform:translateY(-3px)}
+
+footer{
+  text-align:center;padding:32px 20px;background:#0c192c;color:#a3bad9;
+  font-size:.84rem;border-top:1px solid rgba(255,255,255,.08);line-height:1.7;
+}
+
+@media(max-width:850px){
+  .brand-name{display:none}
+  .contador-grid{grid-template-columns:repeat(2,1fr)}
+  .filtro-busqueda-wrap{flex-direction:column;align-items:stretch}
+  .input-busq{width:100%}
+}
+
+@media print{
+  #topbar,#btnArriba,.filtros,.input-busq,#toast,.modal-overlay,.hero-contactos{display:none!important}
+  body{background:#fff!important;color:#000!important;padding-top:0!important;font-size:11pt}
+  header{background:none!important;color:#000!important;padding:20px 0!important}
+  header h1{color:#000!important;font-size:18pt!important}
+  header .cargo{color:#444!important;font-size:12pt!important}
+  .tag-btn, .matricula{border:1px solid #ccc!important;color:#000!important;background:#eee!important}
+  .contador-grid{display:none!important}
+  section{opacity:1!important;transform:none!important;margin-bottom:16px!important;page-break-inside:avoid}
+  .tarjeta{box-shadow:none!important;border:1px solid #ddd!important;padding:12px!important}
+  .acordeon .cuerpo,.emp .cuerpo{max-height:none!important;padding:10px 14px!important}
+  .acordeon .icono, .emp .icono{display:none!important}
+  .proyecto .canvas-cont{height:60px!important}
+  .proyecto .svg-tech{display:none!important}
+}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <a href="#" class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+    <span class="brand-badge">ING. MECÁNICO</span>
+    <span class="brand-name">ORLANDO <span>BERNAL</span> Y.</span>
+  </a>
+
+  <nav id="menu">
+    <a href="#perfil" data-i18n="nav.perfil">Perfil</a>
+    <a href="#servicios" data-i18n="nav.servicios">Servicios</a>
+    <a href="#sectores" data-i18n="nav.sectores">Sectores</a>
+    <a href="#metricas" data-i18n="nav.metricas">Métricas CAD</a>
+    <a href="#areas" data-i18n="nav.areas">Áreas</a>
+    <a href="#experiencia" data-i18n="nav.experiencia">Trayectoria</a>
+    <a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="#tecnologias" data-i18n="nav.tecnologias">Herramientas</a>
+  </nav>
+  
+  <div class="acciones-top">
+    <select id="selIdioma" onchange="cambiarIdioma(this.value)" aria-label="Cambiar idioma" data-i18n-aria="ui.language">
+      <option value="es">🇪🇸 ES</option>
+      <option value="en">🇬🇧 EN</option>
+    </select>
+    <button class="btn-icon" id="btnTema" title="Cambiar tema (Claro/Oscuro)" data-i18n-title="ui.theme">🌙</button>
+    <button class="btn-icon" id="btnImprimir" title="Imprimir / Exportar PDF" data-i18n-title="ui.print">🖨️</button>
+  </div>
+</div>
+
+<header>
+  <div class="header-pill">
+    <span class="punto"></span>
+    <span data-i18n="header.disp">Disponible para proyectos de diseño mecánico, dibujo y fabricación</span>
+  </div>
+  <h1>ORLANDO BERNAL Y.</h1>
+  <div class="cargo" data-i18n="header.cargo">Ingeniero Mecánico</div>
+  
+  <div class="tags" id="headerTags"></div>
+
+  <div class="hero-contactos">
+    <a href="mailto:jobycad@gmail.com" class="btn-cta btn-cta-pri" id="btnHeroMailTo">
+      ✉️ <span data-i18n="header.btnMailTo">Enviar Correo (jobycad@gmail.com)</span>
+    </a>
+    <button class="btn-cta btn-cta-sec" onclick="copiarAlPortapapeles('jobycad@gmail.com')" id="btnHeroMail">
+      📋 <span data-i18n="header.btnMail">Copiar Correo</span>
+    </button>
+    <button class="btn-cta btn-cta-sec" onclick="descargarVCard()" id="btnHeroVcard">
+      📇 <span data-i18n="header.btnVcf">Guardar Contacto (VCF)</span>
+    </button>
+  </div>
+
+  <div class="matricula" data-i18n="header.ubicacion">📍 Bogotá – Colombia · Especialista en Dibujo, Diseño y Fabricación</div>
+
+  <div class="contador-grid">
+    <div class="contador-box" onclick="saltarASeccion('#experiencia', 'Trayectoria Profesional')" title="Ir a Trayectoria Profesional">
+      <b id="cnt1">0</b>
+      <small data-i18n="header.c1">Años de experiencia</small>
+      <span class="hint" data-i18n="header.hint1">Trayectoria laboral ↓</span>
+    </div>
+    <div class="contador-box" onclick="saltarASeccion('#metricas', 'Archivos de Sólidos 3D')" title="Ver Métricas CAD">
+      <b id="cnt2">0</b>
+      <small data-i18n="header.c2">Sólidos 3D / Partes</small>
+      <span class="hint" data-i18n="header.hint2">Ver métricas CAD ↓</span>
+    </div>
+    <div class="contador-box" onclick="saltarASeccion('#metricas', 'Archivos de Ensamble 3D')" title="Ver Métricas CAD">
+      <b id="cnt3">0</b>
+      <small data-i18n="header.c3">Ensambles 3D</small>
+      <span class="hint" data-i18n="header.hint3">Ver ensambles ↓</span>
+    </div>
+    <div class="contador-box" onclick="saltarASeccion('#metricas', 'Planos Técnicos')" title="Ver Planos">
+      <b id="cnt4">0</b>
+      <small data-i18n="header.c4">Planos generados</small>
+      <span class="hint" data-i18n="header.hint4">Ver planos ↓</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="perfil">
+  <h2><span class="num">1</span> <span data-i18n="titulos.t1">PERFIL PROFESIONAL</span></h2>
+  <div class="tarjeta" id="perfilText"></div>
+</section>
+
+<section id="servicios">
+  <h2><span class="num">2</span> <span data-i18n="titulos.tServ">SERVICIOS DE INGENIERÍA MECÁNICA & DISEÑO</span></h2>
+  <div class="servicios-grid" id="gridServicios"></div>
+</section>
+
+<section id="sectores">
+  <h2><span class="num">3</span> <span data-i18n="titulos.tSec">SECTORES INDUSTRIALES ATENDIDOS</span></h2>
+  <div class="tarjeta">
+    <div class="sectores-instruccion">
+      <span data-i18n="sectores.desc">Haz clic en el sector de tu interés para saltar directamente a la maquinaria y proyectos correspondientes:</span>
+      <span style="font-size:.78rem;color:var(--dorado);font-weight:700" data-i18n="sectores.salto">⚡ Salto directo a la experiencia</span>
+    </div>
+    <div class="sectores-grid" id="gridSectores"></div>
+  </div>
+</section>
+
+<section id="metricas">
+  <h2><span class="num">4</span> <span data-i18n="titulos.tMet">CAPACIDAD Y PRODUCCIÓN EN SOFTWARE CAD (SOLID EDGE & AUTOCAD)</span></h2>
+  <div class="tarjeta" style="border-left-color:var(--dorado)">
+    <p data-i18n="metricas.desc" style="color:var(--texto-sec)">Manejo de herramientas y programas virtuales para diseño mecánico acumulando en la experiencia personal:</p>
+    <div class="chips" id="cadChips"></div>
+  </div>
+</section>
+
+<section id="areas">
+  <h2><span class="num">5</span> <span data-i18n="titulos.t2">ÁREAS DE DESEMPEÑO Y CAPACIDADES</span> <small style="font-size:.74rem;color:var(--dorado);margin-left:8px;font-weight:400" data-i18n="titulos.clickExp">(haz clic para desplegar)</small></h2>
+  <div id="contAreas"></div>
+</section>
+
+<section id="experiencia">
+  <h2><span class="num">6</span> <span data-i18n="titulos.t4">TRAYECTORIA PROFESIONAL Y CARGOS CLAVE</span> <small style="font-size:.74rem;color:var(--dorado);margin-left:8px;font-weight:400" data-i18n="titulos.clickClient">(clic en cada bloque para detalles)</small></h2>
+  <div class="timeline" id="contExperiencia"></div>
+</section>
+
+<section id="proyectos">
+  <h2><span class="num">7</span> <span data-i18n="titulos.t5">REGISTRO DE PROYECTOS REALIZADOS</span> <small style="font-size:.74rem;color:var(--dorado);margin-left:8px;font-weight:400" data-i18n="titulos.hoverDet">(haz clic para ficha técnica)</small></h2>
+  <div class="proyectos-grid" id="gridProyectos"></div>
+</section>
+
+<section id="tecnologias">
+  <h2><span class="num">8</span> <span data-i18n="titulos.t6">HERRAMIENTAS, MATERIALES Y ESPECIALIDADES</span></h2>
+  <div class="tarjeta">
+    <div class="filtro-busqueda-wrap">
+      <div class="filtros" id="filtrosTech"></div>
+      <input type="text" id="busqTech" class="input-busq" placeholder="🔍 Filtrar software/campo..." data-i18n-placeholder="ui.search" oninput="buscarTech(this.value)">
+    </div>
+    <div class="tech" id="techWrap"></div>
+  </div>
+</section>
+
+<section id="fortalezas">
+  <h2><span class="num">9</span> <span data-i18n="titulos.t7">FORTALEZAS PROFESIONALES</span></h2>
+  <div class="tarjeta" id="fortaWrap"></div>
+</section>
+
+</main>
+
+<div class="modal-overlay" id="modalContacto" role="dialog" aria-modal="true" aria-labelledby="modalContactoTit">
+  <div class="modal-caja">
+    <span class="cerrar" onclick="cerrarModales()">✕</span>
+    <h3 id="modalContactoTit" data-i18n="modal.tit">✉️ Contacto Profesional</h3>
+    <p style="text-align:center;color:var(--texto-sec);font-size:.88rem;margin-bottom:14px">Ing. Orlando Bernal Y. — Bogotá – Colombia</p>
+    
+    <div class="modal-enlaces">
+      <a href="mailto:jobycad@gmail.com" class="m-btn-pri" data-i18n="modal.btnMailTo">
+        ✉️ Enviar Correo a: jobycad@gmail.com
+      </a>
+      <button class="m-btn-sec" onclick="copiarAlPortapapeles('jobycad@gmail.com')" data-i18n="modal.btnMail">
+        📋 Copiar Correo: jobycad@gmail.com
+      </button>
+      <button class="m-btn-sec" onclick="descargarVCard()" data-i18n="modal.btnVcf">
+        📇 Descargar Tarjeta de Contacto (.vcf)
+      </button>
+      <button class="m-btn-sec" onclick="window.print()" data-i18n="modal.btnPrint">
+        🖨️ Imprimir / Guardar Portafolio en PDF
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalProyecto" role="dialog" aria-modal="true" aria-labelledby="modalProyTitulo">
+  <div class="modal-caja">
+    <span class="cerrar" onclick="cerrarModales()">✕</span>
+    <div id="modalProyContenido"></div>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"><span>✔</span> <span id="toastMsg">Mensaje copiado</span></div>
+<button id="btnArriba" title="Volver arriba">↑</button>
+
+<footer id="footerText">
+  Ing. Orlando Bernal Y. · Ingeniero Mecánico · Bogotá – Colombia<br>
+  Dibujo · Diseño Mecánico 3D · Fabricación · Solid Edge & AutoCAD · jobycad@gmail.com
+</footer>
+
+<script>
+const direccionamientoSectores = {
+  metalmecanica: { proyId: "proy_0", empId: "exp_inalgrifos", nombre: "Metalmecánica" },
+  plastica: { proyId: "proy_4", empId: "exp_previtec", nombre: "Plástica" },
+  farmaceutica: { proyId: "proy_3", empId: "exp_schering", nombre: "Farmacéutica" },
+  cosmetica: { proyId: "proy_5", empId: "exp_previtec", nombre: "Cosmética" },
+  alimentos: { proyId: "proy_2", empId: "exp_bimbo", nombre: "Alimentos" },
+  aeronautica: { proyId: "proy_6", empId: "exp_sigma", nombre: "Aeronáutica e Infraestructura" },
+  educacion: { proyId: "proy_0", empId: "exp_umng", nombre: "Educación y Laboratorios" },
+  estructural: { proyId: "proy_11", empId: "exp_alpa", nombre: "Estructuras y Construcción" }
+};
+
+const i18n = {
+  es: {
+    nav: { perfil:"Perfil", servicios:"Servicios", sectores:"Sectores", metricas:"Métricas CAD", areas:"Áreas", experiencia:"Trayectoria", proyectos:"Proyectos", tecnologias:"Herramientas" },
+    header: {
+      disp:"Disponible para proyectos de diseño mecánico, dibujo y fabricación",
+      cargo: "Ingeniero Mecánico",
+      ubicacion: "📍 Bogotá – Colombia · Especialista en Dibujo, Diseño y Fabricación (Julio 2023)",
+      c1: "Años de experiencia", c2: "Sólidos 3D / Partes", c3: "Ensambles 3D", c4: "Planos generados",
+      hint1: "Trayectoria laboral ↓", hint2: "Ver métricas CAD ↓", hint3: "Ver ensambles ↓", hint4: "Ver planos ↓",
+      btnMailTo: "Enviar Correo (jobycad@gmail.com)",
+      btnMail: "Copiar Correo",
+      btnVcf: "Guardar Contacto (VCF)"
+    },
+    titulos: {
+      t1: "PERFIL PROFESIONAL",
+      tServ: "SERVICIOS DE INGENIERÍA MECÁNICA & DISEÑO",
+      tSec: "SECTORES INDUSTRIALES ATENDIDOS",
+      tMet: "CAPACIDAD Y PRODUCCIÓN EN SOFTWARE CAD (SOLID EDGE & AUTOCAD)",
+      t2: "ÁREAS DE DESEMPEÑO Y CAPACIDADES",
+      t4: "TRAYECTORIA PROFESIONAL Y CARGOS CLAVE",
+      t5: "REGISTRO DE PROYECTOS REALIZADOS",
+      t6: "HERRAMIENTAS, MATERIALES Y ESPECIALIDADES",
+      t7: "FORTALEZAS PROFESIONALES",
+      clickExp: "(haz clic para desplegar)",
+      clickClient: "(clic en cada bloque para detalles)",
+      hoverDet: "(haz clic para ficha técnica)",
+      proyDest: "PROYECTO REALIZADO",
+      starAlcance: "📐 Alcance y Trabajo Desarrollado:",
+      starCliente: "🏢 Cliente / Empresa Ejecutora:",
+      starDetalle: "⚙️ Características Técnicas y Materiales:",
+      btnConsultarProy: "✉️ Consultar por un proyecto de diseño o fabricación similar"
+    },
+    tagsFuncionales: [
+      { texto: "Diseño y Modelado 3D", destino: "#servicio_0", hint: "Ver Diseño y Modelado 3D" },
+      { texto: "Planos Totales de Fabricación", destino: "#servicio_1", hint: "Ver Planos de Fabricación" },
+      { texto: "Adecuación y Repotenciación", destino: "#servicio_2", hint: "Ver Adecuación de Maquinaria" },
+      { texto: "Instalaciones y Líneas de Producción", destino: "#servicio_3", hint: "Ver Dibujo de Instalaciones" },
+      { texto: "+18.000 Sólidos 3D", destino: "#metricas", hint: "Ver volumen de producción CAD" },
+      { texto: "19 Proyectos Registrados", destino: "#proyectos", hint: "Ver registro fotográfico y técnico" }
+    ],
+    perfil: [
+      "<strong>Ingeniero Mecánico</strong> con <strong>más de 22 años de experiencia</strong> laboral y profesional en diversas ramas de la ingeniería, destacándose en el área de <em>dibujo, diseño y fabricación</em>.",
+      "He tenido la fortuna de participar y encabezar múltiples trabajos y proyectos de <strong>resolución de necesidades puntuales</strong> para las industrias <em>metalmecánica, plástica, farmacéutica, cosmética y de alimentos</em>.",
+      "Manejo avanzado de herramientas y programas virtuales para diseño mecánico como <strong>Solid Edge y AutoCAD</strong>, acumulando en mi experiencia personal alrededor de <strong>18.000 archivos de parte o sólidos 3D</strong>, cerca de <strong>5.000 archivos de ensamble 3D</strong> y más de <strong>9.000 planos</strong> en múltiples extensiones."
+    ],
+    servicios: [
+      {
+        badge: "Servicio 1 · Modelado & Detallado",
+        tit: "Dibujo y Diseño Mecánico 3D de Piezas y Ensambles",
+        desc: "Generación de modelos paramétricos en Solid Edge y AutoCAD para piezas individuales, mecanismos y sistemas de producción completos.",
+        items: [
+          "Modelado de sólidos 3D de alta precisión y complejidad geométrica",
+          "Creación y verificación de ensambles mecánicos 3D",
+          "Diseño de máquinas sencillas y complejas",
+          "Desarrollo de productos y componentes mecánicos a medida"
+        ],
+        btnCotizar: "✉️ Consultar Servicio",
+        msgMail: "Consulta sobre Servicio de Dibujo y Diseño Mecánico 3D"
+      },
+      {
+        badge: "Servicio 2 · Ingeniería de Detalle",
+        tit: "Elaboración de Planos Totales de Fabricación",
+        desc: "Elaboración rigurosa de planos técnicos en múltiples extensiones listos para taller, mecanizado, corte y ensamble.",
+        items: [
+          "Planos de despiece, tolerancias y ajustes de mecanizado",
+          "Planos de ensamble general con listas de materiales (BOM)",
+          "Planos para estructuras en acero inoxidable, cold roll y perfiles",
+          "Planos de evacuación e instalaciones físicas"
+        ],
+        btnCotizar: "✉️ Consultar Servicio",
+        msgMail: "Consulta sobre Elaboración de Planos Totales de Fabricación"
+      },
+      {
+        badge: "Servicio 3 · Repotenciación & Adecuación",
+        tit: "Adecuación, Modificación y Repotenciación de Maquinaria",
+        desc: "Modernización y rediseño de maquinaria industrial existente para optimizar su rendimiento, adaptabilidad y capacidad operativa.",
+        items: [
+          "Subdirección y proyectos de desmonte de plantas industriales",
+          "Modificación de sistemas de tracción, transporte y dosificación",
+          "Adaptación de maquinaria a nuevas líneas de trabajo y formatos",
+          "Integración de componentes en acero inoxidable y plásticos de ingeniería"
+        ],
+        btnCotizar: "✉️ Consultar Servicio",
+        msgMail: "Consulta sobre Adecuación y Repotenciación de Maquinaria"
+      },
+      {
+        badge: "Servicio 4 · Planta e Infraestructura",
+        tit: "Diseño de Instalaciones, Líneas de Suministro y Producción",
+        desc: "Levantamiento a escala real y diseño de distribución de planta para líneas continuas de suministro, empaque y producción.",
+        items: [
+          "Levantamiento y dibujo 3D en medidas a escala real en plantas de producción",
+          "Diseño de líneas de transporte por bandas, magazín y rodillos",
+          "Diseño de instalaciones mecánicas, físicas y estructurales",
+          "Sistemas de llenado, tapado, empaque y almacenamiento auto sustentable"
+        ],
+        btnCotizar: "✉️ Consultar Servicio",
+        msgMail: "Consulta sobre Diseño de Instalaciones y Líneas de Producción"
+      }
+    ],
+    sectores: {
+      desc: "Haz clic en el sector de tu interés para saltar directamente a la maquinaria y proyectos correspondientes:",
+      salto: "⚡ Salto directo a la experiencia",
+      btnVer: "Ver proyectos →",
+      lista: [
+        {id:"metalmecanica", i:"⚙️", n:"Metalmecánica y Maquinaria"},
+        {id:"plastica", i:"♻️", n:"Plásticos y Polímeros"},
+        {id:"farmaceutica", i:"💊", n:"Farmacéutica y Cosmética"},
+        {id:"alimentos", i:"🥫", n:"Alimentos y Bebidas"},
+        {id:"aeronautica", i:"✈️", n:"Aeronáutica e Infraestructura"},
+        {id:"educacion", i:"🎓", n:"Educación, Laboratorios y Museos"},
+        {id:"estructural", i:"🏗️", n:"Estructuras Habitacionales y Almacenaje"}
+      ]
+    },
+    metricas: {
+      desc: "Manejo de herramientas y programas virtuales para diseño mecánico acumulando en la experiencia personal un portafolio de alto volumen técnico:",
+      chips: [
+        { txt: "📦 Alrededor de 18.000 archivos de parte o sólidos 3D", destino: "#proyectos" },
+        { txt: "🧩 Cerca de 5.000 archivos de ensamble 3D", destino: "#proyectos" },
+        { txt: "📐 Más de 9.000 planos en múltiples extensiones", destino: "#proyectos" },
+        { txt: "💻 Solid Edge & AutoCAD (Manejo integral)", destino: "#tecnologias" }
+      ]
+    },
+    areas: [
+      {
+        t:"⚙️ Dibujo, Diseño y Fabricación Mecánica",
+        c:[
+          "Diseño y modelado de piezas mecánicas simples y complejas",
+          "Desarrollo de sistemas mecánicos y de producción completos",
+          "Líneas de trabajo, adecuación y repotenciación de maquinaria industrial",
+          "Dirección de fabricación, ensamble, ajuste e instalación en sitio"
+        ]
+      },
+      {
+        t:"📐 Instalaciones, Infraestructura y Distribución de Planta",
+        c:[
+          "Dibujo y diseño de instalaciones mecánicas, físicas y estructurales",
+          "Diseño y ruteo de líneas de suministro, empaque y producción",
+          "Levantamiento y dibujo 3D con medidas a escala real en plantas de manufactura",
+          "Planos de evacuación e instalaciones generales de planta"
+        ]
+      },
+      {
+        t:"🛠️ Materiales y Procesos de Manufactura",
+        c:[
+          "Diseño en Aceros Inoxidables para grado farmacéutico y alimenticio",
+          "Diseño en Cold Roll y perfiles estructurales de ingeniería",
+          "Aplicación y mecanizado de Resinas, Madera y Plásticos de Ingeniería",
+          "Construcciones modulares, telescópicas y auto sustentables"
+        ]
+      }
+    ],
+    experiencia: [
+      {
+        id:"exp_inalgrifos",
+        tit: "INALGRIFOS S.A. — Ingeniero y Diseñador",
+        sub: "Departamento de Producto",
+        fec: "2005 – 2008",
+        list: [
+          "Ingeniero y diseñador del <strong>Departamento de producto</strong>.",
+          "Desarrollo y modelado de piezas y productos para grifería y sistemas metalmecánicos."
+        ]
+      },
+      {
+        id:"exp_schering",
+        tit: "PLANTA SCHERING COLOMBIANA — Subdirección de Desmonte",
+        sub: "Industria Farmacéutica",
+        fec: "2010 – 2011",
+        list: [
+          "Subdirección técnica de desmonte de la <strong>Planta Schering Colombiana</strong>.",
+          "Coordinación y adecuación de líneas e instalaciones farmacéuticas."
+        ]
+      },
+      {
+        id:"exp_mmf",
+        tit: "MMF ZONA FRANCA — Diseño y Dirección de Fabricación",
+        sub: "Manufacturera Mundial Farmacéutica",
+        fec: "2015",
+        list: [
+          "Diseño y dirección de fabricación de la <strong>línea de recubrimientos de comprimidos</strong>.",
+          "Diseño de bombo de recubrimiento para comprimidos farmacéuticos y sopladora de frascos en línea de envase en acero inoxidable."
+        ]
+      },
+      {
+        id:"exp_umng",
+        tit: "UNIVERSIDAD MILITAR NUEVA GRANADA (Cajicá) & ALPA MACHINE GROUP S.A.S.",
+        sub: "Laboratorios y Museo de Telecomunicaciones",
+        fec: "Proyectos Destacados",
+        list: [
+          "Diseño, fabricación y dirección de múltiples proyectos para los laboratorios y el museo de telecomunicaciones en compañía de <strong>Alpa Machine Group S.A.S.</strong>",
+          "Diseño y dirección de fabricación e instalación de la <strong>Mesa telescópica para pruebas sísmicas</strong>.",
+          "Diseño, fabricación e instalación del <strong>Modelo armable de estructura habitacional</strong> (resina, madera y plásticos de ingeniería)."
+        ]
+      },
+      {
+        id:"exp_empresas",
+        tit: "PROYECTOS MULTIDISCIPLINARIOS EN DIVERSAS EMPRESAS DEL SECTOR",
+        sub: "Previtec, ASEMAQ, Electrimec, INGPACK, Tersell, SIGMA & SILOS, Alpa Machine Group",
+        fec: "Trayectoria Continua (+22 Años)",
+        desc: "Participación activa en diseño, planos totales y dirección de fabricación:",
+        list: [
+          "<span id='exp_previtec'><strong>Previtec Ltda.</strong>: Diseño y planos totales de selladora de blisters profundos y llenadora de líquidos multirrango en acero inoxidable.</span>",
+          "<span id='exp_asemaq'><strong>ASEMAQ Ltda.</strong>: Diseño y planos totales de bombo de recubrimiento, crimpadora para envases de vidrio y llenadoras.</span>",
+          "<span id='exp_electrimec'><strong>Electrimec S.A.S.</strong>: Diseño y ensamble de sopladora de frascos en acero inoxidable y banda con surtidora de cajas plegadas.</span>",
+          "<span id='exp_ingpack'><strong>INGPACK S.A.S.</strong>: Diseño y planos totales de fabricación para elevadores de carga de 250, 500 y 1000 Kg.</span>",
+          "<span id='exp_tersell'><strong>Tersell Ltda.</strong>: Diseño, fabricación y puesta a punto de Nube Balotera (1.5 x 3.0 x 1.0 m) para A LA PEPA.</span>",
+          "<span id='exp_sigma'><strong>SIGMA & SILOS S.A.S.</strong>: Diseño y planos totales de escaleras para pasajeros, plataformas de trabajo y mantenimiento para <strong>Copa Airlines</strong> y <strong>Avianca</strong>.</span>",
+          "<span id='exp_bimbo'><strong>Alpa Machine Group S.A.S. / BIMBO (Tenjo)</strong>: Cámara de vapor para magazín de bandas transportadoras en acero inoxidable (4 x 20 x 5 metros).</span>",
+          "<span id='exp_alpa'><strong>Alpa Machine Group S.A.S. / ECO BALANCE TECHNOLOGIES (México)</strong>: Estructura de almacenaje auto sustentable multi-terrenos (8.0 x 5.0 x 7.5 m).</span>",
+          "<span id='exp_kelloggs'><strong>Kellogg's (Bogotá)</strong>: Levantamiento y dibujo 3D en medidas a escala real en planta de producción.</span>",
+          "<span id='exp_lasante'><strong>Laboratorios La Santé</strong>: Diseño de sistema tensor de foil de aluminio en blisteadora Hulmann.</span>",
+          "<span id='exp_camber'><strong>Camber Ltda.</strong>: Diseño de línea de llenado y tapado de canecas de pintura.</span>",
+          "<span id='exp_lavanser'><strong>Lavanser Ltda.</strong>: Planos de evacuación e instalaciones.</span>"
+        ]
+      }
+    ],
+    proyectos: [
+      {
+        t: "Mesa Telescópica para Pruebas Sísmicas",
+        sec: "Educación & Laboratorios",
+        d: "Diseño y dirección de fabricación e instalación para laboratorios universitarios.",
+        alcance: "Diseño mecánico integral, cálculo de perfiles telescópicos, dirección de fabricación en taller y montaje final en fosa.",
+        cliente: "UNIVERSIDAD MILITAR NUEVA GRANADA 'UMNG' (Cajicá) / Alpa Machine Group S.A.S.",
+        materiales: "Estructura metálica para ensayos dinámicos, guiado telescópico vertical, rejas perimetrales de seguridad y plataforma de ensayo."
+      },
+      {
+        t: "Modelo Armable de Estructura Habitacional",
+        sec: "Estructuras & Materiales",
+        d: "Diseño, fabricación e instalación de modelo modular armable.",
+        alcance: "Modelado 3D de piezas de encastre, fabricación y montaje de estructura a escala modular sobre remolque.",
+        cliente: "UNIVERSIDAD MILITAR NUEVA GRANADA 'UMNG' (Cajicá) / Alpa Machine Group S.A.S.",
+        materiales: "Resina, madera y plásticos de ingeniería con chasis metálico móvil."
+      },
+      {
+        t: "Cámara de Vapor para Magazín Bandas Transportadoras (4 x 20 x 5 m)",
+        sec: "Alimentos & Bebidas",
+        d: "Colaboración en diseño, dirección de fabricación, ensamble e instalación en planta.",
+        alcance: "Estructura de gran formato en acero inoxidable para acondicionamiento continuo de bandas transportadoras.",
+        cliente: "BIMBO (Tenjo) / Alpa Machine Group S.A.S.",
+        materiales: "Acero Inoxidable sanitario, dimensiones generales: 4 x 20 x 5 metros."
+      },
+      {
+        t: "Sopladora de Frascos en Línea de Envase",
+        sec: "Farmacéutica & Envase",
+        d: "Diseño y colaboración en ensamble, ajuste e instalación en línea continua.",
+        alcance: "Sistema de limpieza y soplado automático de frascos para transporte hacia llenadora farmacéutica.",
+        cliente: "MANUFACTURERA MUNDIAL FARMACÉUTICA 'MMF' (Zona Franca) / Electrimec S.A.S.",
+        materiales: "Acero Inoxidable grado farmacéutico, sistema neumático y bandas de transporte."
+      },
+      {
+        t: "Selladora de Blisters Profundos",
+        sec: "Plásticos & Farmacéutica",
+        d: "Diseño y planos totales de fabricación de máquina compacta de sellado.",
+        alcance: "Planos completos de mecanizado y ensamble de matriz calefactora, accionamiento y carcasa exterior.",
+        cliente: "Previtec Ltda.",
+        materiales: "Acero Inoxidable, placas térmicas, mecanismos de prensado y componentes normalizados."
+      },
+      {
+        t: "Llenadora de Líquidos Multirrango",
+        sec: "Cosmética & Farmacéutica",
+        d: "Diseño y planos totales de fabricación para dosificación precisa de líquidos.",
+        alcance: "Modelado 3D de cabezales dosificadores, bomba de pistón, boquillas antigoteo y soporte graduable.",
+        cliente: "ASEMAQ Ltda. / Previtec Ltda.",
+        materiales: "Acero Inoxidable sanitario, polímeros técnicos y panel de control frontal."
+      },
+      {
+        t: "Escaleras para Pasajeros y Plataformas de Mantenimiento",
+        sec: "Aeronáutica e Infraestructura",
+        d: "Diseño y planos totales de fabricación para aeropuertos y hangares.",
+        alcance: "Diseño estructural de escaleras móviles de abordaje y plataformas de trabajo para mantenimiento aeronáutico.",
+        cliente: "Copa Airlines y Avianca / SIGMA & SILOS S.A.S.",
+        materiales: "Estructura en perfiles de acero, peldaños antideslizantes, barandillas y chasis rodante."
+      },
+      {
+        t: "Bombo de Recubrimiento para Comprimidos Farmacéuticos",
+        sec: "Farmacéutica",
+        d: "Diseño de planos totales de fabricación, dirección de fabricación y ensamble.",
+        alcance: "Ingeniería de detalle de paila giratoria, sistema de pulverización, conductos de aire y grupo motriz.",
+        cliente: "MANUFACTURERA MUNDIAL FARMACÉUTICA 'MMF' (Zona Franca) / ASEMAQ LTDA.",
+        materiales: "Acero Inoxidable pulido sanitario, skid de bombeo y tuberías sanitarias."
+      },
+      {
+        t: "Elevadores de Carga 250, 500 y 1000 Kg",
+        sec: "Transporte & Carga",
+        d: "Diseño y planos totales de fabricación de montacargas industriales.",
+        alcance: "Planos estructurales, columnas de guiado, cabina, contrapeso y sistemas de elevación por cable/cadena.",
+        cliente: "INGPACK S.A.S.",
+        materiales: "Perfiles estructurales de acero, cabina reforzada, protecciones y sistemas de anclaje."
+      },
+      {
+        t: "Crimpadora para Envases de Vidrio",
+        sec: "Cosmética & Farmacéutica",
+        d: "Diseño y planos totales de fabricación de máquina de sobremesa.",
+        alcance: "Despiece de cabezales de crimpado, pinzas de agarre, mandriles y sistema de accionamiento.",
+        cliente: "ASEMAQ Ltda.",
+        materiales: "Acero tratado, componentes inoxidables y mesa de apoyo con pulsador."
+      },
+      {
+        t: "Nube Balotera (1.5 x 3.0 x 1.0 m)",
+        sec: "Metalmecánica & Entretenimiento",
+        d: "Diseño, participación en la fabricación y puesta a punto.",
+        alcance: "Estructura curva termoformada y metálica para circulación y agitación de balotas neumáticas.",
+        cliente: "A LA PEPA (Bogotá) / Tersell Ltda.",
+        materiales: "Cold Roll y plásticos de ingeniería transparentes (Dimensiones: 1.5 x 3.0 x 1.0 m)."
+      },
+      {
+        t: "Estructura de Almacenaje Auto Sustentable (8.0 x 5.0 x 7.5 m)",
+        sec: "Estructuras & Almacenaje",
+        d: "Pre diseño, diseño y posteriores versiones para terrenos múltiples.",
+        alcance: "Modelado 3D de armazón estructural modular de gran altura para almacenamiento exterior.",
+        cliente: "ECO BALANCE TECHNOLOGIES (México) / Alpa Machine Group S.A.S.",
+        materiales: "Perfiles estructurales tubulares, cubierta tensada modular (8.0 x 5.0 x 7.5 m)."
+      },
+      {
+        t: "Mono Bloque Llenadora de Polvos",
+        sec: "Farmacéutica & Alimentos",
+        d: "Diseño de cabina y sistema de dosificación por tornillo sinfín.",
+        alcance: "Planos de ensamble y despiece para llenado volumétrico de polvos en cabina cerrada.",
+        cliente: "Industria Farmacéutica / Cosmética",
+        materiales: "Acero Inoxidable y cerramiento en acrílico sanitario."
+      },
+      {
+        t: "Sistema Tensor Foil Aluminio en Blisteadora Hulmann",
+        sec: "Farmacéutica & Empaque",
+        d: "Diseño y adaptación de sistema de tensión para alimentación de foil.",
+        alcance: "Mejora mecánica de guiado para eliminar desalineaciones en blíster farmacéutico.",
+        cliente: "Laboratorios La Santé",
+        materiales: "Ejes de precisión, rodillos de guiado y soportes en aluminio/acero inoxidable."
+      },
+      {
+        t: "Banda con Surtidora de Cajas Plegadas",
+        sec: "Empaque & Automatización",
+        d: "Diseño de tolva inclinada y banda de alimentación para estuches.",
+        alcance: "Modelado 3D de cargador de cajas plegadas con sincronización a línea de empaque.",
+        cliente: "Electrimec S.A.S.",
+        materiales: "Estructura en perfiles de acero, bandas plásticas y guías graduables."
+      },
+      {
+        t: "Sistema de Bandas Suministro de Cajas de Monedas",
+        sec: "Transporte & Logística",
+        d: "Diseño mecánico de línea continua de transferencia de cajas pesadas.",
+        alcance: "Diseño de estructura de rodillos y bandas resistentes para alta carga.",
+        cliente: "Sector Logístico / Financiero",
+        materiales: "Estructuras de alta resistencia, motovertederos y rodillos metálicos."
+      },
+      {
+        t: "Planos de Evacuación e Instalaciones de Planta",
+        sec: "Seguridad & Infraestructura",
+        d: "Levantamiento técnico de áreas y diagramación de seguridad industrial.",
+        alcance: "Elaboración de planos 2D de distribución arquitectónica, rutas de evacuación y recursos de emergencia.",
+        cliente: "Lavanser Ltda.",
+        materiales: "Planos técnicos normalizados en AutoCAD."
+      },
+      {
+        t: "Línea de Llenado y Tapado de Canecas de Pintura",
+        sec: "Química & Pinturas",
+        d: "Diseño de transportador y estaciones automáticas de dosificación y prensado de tapas.",
+        alcance: "Diseño de línea pesada con transportador de rodillos, dosificador y cabezal cerrador.",
+        cliente: "Camber Ltda.",
+        materiales: "Estructuras en acero estructural, cilindros de prensado y cabezales dosificadores."
+      },
+      {
+        t: "Levantamiento y Dibujo 3D a Escala Real en Planta de Producción",
+        sec: "Alimentos & Distribución de Planta",
+        d: "Levantamiento tridimensional milimétrico de líneas activas de producción.",
+        alcance: "Digitalización 3D completa de naves industriales, maquinaria instalada y tuberías de servicio.",
+        cliente: "Kellogg's (Bogotá)",
+        materiales: "Archivos 3D a escala real en Solid Edge y AutoCAD."
+      }
+    ],
+    catsTech: [["TODOS","Todos"],["CAD","Software CAD"],["MAT","Materiales"],["MAQ","Tipos de Maquinaria"],["SECT","Sectores"]],
+    fortalezas: [
+      {n:"Diseño y modelado mecánico 3D (Solid Edge & AutoCAD)",v:98},
+      {n:"Generación de planos totales de fabricación y despiece",v:96},
+      {n:"Diseño de maquinaria y sistemas de producción a medida",v:95},
+      {n:"Adecuación, repotenciación y desmonte de plantas",v:92},
+      {n:"Levantamiento tridimensional de instalaciones industriales",v:94},
+      {n:"Soluciones para industrias farmacéutica, plástica y alimentos",v:95}
+    ],
+    modal: {
+      tit:"✉️ Contacto Profesional",
+      btnMailTo: "✉️ Enviar Correo a: jobycad@gmail.com",
+      btnMail: "📋 Copiar Correo: jobycad@gmail.com",
+      btnVcf: "📇 Descargar Tarjeta de Contacto (.vcf)",
+      btnPrint: "🖨️ Imprimir / Guardar Portafolio en PDF"
+    },
+    footer: "Ing. Orlando Bernal Y. · Ingeniero Mecánico · Bogotá – Colombia<br>Dibujo · Diseño Mecánico 3D · Fabricación · Solid Edge & AutoCAD · jobycad@gmail.com"
+  },
+  en: {
+    nav: { perfil:"Profile", servicios:"Services", sectores:"Sectors", metricas:"CAD Metrics", areas:"Capabilities", experiencia:"Experience", proyectos:"Projects", tecnologias:"Tools" },
+    header: {
+      disp:"Available for mechanical design, drafting, and manufacturing projects",
+      cargo: "Mechanical Engineer",
+      ubicacion: "📍 Bogotá – Colombia · Specialist in Drafting, Design & Manufacturing (July 2023)",
+      c1: "Years of experience", c2: "3D Solid / Part Files", c3: "3D Assemblies", c4: "Drafted Drawings",
+      hint1: "Work trajectory ↓", hint2: "See CAD metrics ↓", hint3: "See assemblies ↓", hint4: "See drawings ↓",
+      btnMailTo: "Send Email (jobycad@gmail.com)",
+      btnMail: "Copy Email",
+      btnVcf: "Save Contact (VCF)"
+    },
+    titulos: {
+      t1: "PROFESSIONAL PROFILE",
+      tServ: "MECHANICAL ENGINEERING & DESIGN SERVICES",
+      tSec: "SERVED INDUSTRIAL SECTORS",
+      tMet: "CAD PRODUCTION CAPACITY (SOLID EDGE & AUTOCAD)",
+      t2: "CORE COMPETENCIES & EXPERTISE",
+      t4: "PROFESSIONAL EXPERIENCE & KEY ROLES",
+      t5: "PROJECT PORTFOLIO & TRACK RECORD",
+      t6: "TOOLS, MATERIALS & SPECIALTIES",
+      t7: "PROFESSIONAL STRENGTHS",
+      clickExp: "(click to expand)",
+      clickClient: "(click each card for details)",
+      hoverDet: "(click for technical sheet)",
+      proyDest: "EXECUTED PROJECT",
+      starAlcance: "📐 Scope & Engineering Work:",
+      starCliente: "🏢 Client / Executing Company:",
+      starDetalle: "⚙️ Technical Specifications & Materials:",
+      btnConsultarProy: "✉️ Inquire about a similar mechanical design or fabrication project"
+    },
+    tagsFuncionales: [
+      { texto: "3D Design & Modeling", destino: "#servicio_0", hint: "See 3D Design & Modeling" },
+      { texto: "Complete Manufacturing Drawings", destino: "#servicio_1", hint: "See Manufacturing Drawings" },
+      { texto: "Machinery Retrofit & Upgrade", destino: "#servicio_2", hint: "See Machinery Upgrades" },
+      { texto: "Plant Layouts & Supply Lines", destino: "#servicio_3", hint: "See Plant Layouts" },
+      { texto: "+18,000 3D Part Files", destino: "#metricas", hint: "See CAD production volume" },
+      { texto: "19 Registered Projects", destino: "#proyectos", hint: "See photo & technical record" }
+    ],
+    perfil: [
+      "<strong>Mechanical Engineer</strong> with <strong>over 22 years of experience</strong> in engineering, standing out in the areas of <em>drafting, design, and manufacturing</em>.",
+      "Extensive background leading and executing multiple projects solving specific industrial needs for the <em>metalworking, plastics, pharmaceutical, cosmetics, and food</em> industries.",
+      "Advanced proficiency in mechanical CAD software such as <strong>Solid Edge and AutoCAD</strong>, accumulating personal career metrics of approximately <strong>18,000 3D part/solid files</strong>, nearly <strong>5,000 3D assembly files</strong>, and over <strong>9,000 technical drawings</strong> in multiple formats."
+    ],
+    servicios: [
+      {
+        badge: "Service 1 · 3D Modeling & Detailing",
+        tit: "3D Mechanical Design & Modeling of Parts & Assemblies",
+        desc: "Parametric solid modeling in Solid Edge and AutoCAD for individual machine components, linkages, and complete production equipment.",
+        items: [
+          "High-precision 3D solid modeling of complex geometry parts",
+          "3D mechanical assembly construction and kinematic verification",
+          "Design of simple and complex industrial machinery",
+          "Custom mechanical product development"
+        ],
+        btnCotizar: "✉️ Inquire Service",
+        msgMail: "Inquiry about 3D Mechanical Design and Modeling Service"
+      },
+      {
+        badge: "Service 2 · Detail Engineering",
+        tit: "Complete Manufacturing & Shop Drawing Drafting",
+        desc: "Rigorous technical drafting in multiple formats ready for machine shop manufacturing, cutting, fabrication, and assembly.",
+        items: [
+          "Part detail drawings with fit and machining tolerances",
+          "General assembly drawings with Bills of Materials (BOM)",
+          "Drawings for stainless steel, cold roll, and structural profiles",
+          "Plant evacuation and physical facility blueprints"
+        ],
+        btnCotizar: "✉️ Inquire Service",
+        msgMail: "Inquiry about Manufacturing and Shop Drawings Drafting"
+      },
+      {
+        badge: "Service 3 · Retrofit & Upgrades",
+        tit: "Industrial Machinery Adaptation, Modification & Retrofit",
+        desc: "Modernization and redesign of legacy manufacturing equipment to enhance operational throughput, adaptability, and safety.",
+        items: [
+          "Industrial plant decommissioning management and technical direction",
+          "Modification of drive, conveyance, and dosing systems",
+          "Machine adaptation to new packaging and manufacturing formats",
+          "Integration of stainless steel and engineering plastic components"
+        ],
+        btnCotizar: "✉️ Inquire Service",
+        msgMail: "Inquiry about Machinery Adaptation and Retrofit Services"
+      },
+      {
+        badge: "Service 4 · Plant & Infrastructure",
+        tit: "Industrial Facilities, Supply & Production Line Design",
+        desc: "Full-scale 3D plant survey and layout drafting for continuous material supply, packaging, and production operations.",
+        items: [
+          "Full 1:1 scale 3D plant layout measurement and digital drafting",
+          "Conveyor belt, magazine feeder, and roller transport line design",
+          "Mechanical, structural, and utility piping design",
+          "Filling, capping, packaging, and self-sustaining storage structures"
+        ],
+        btnCotizar: "✉️ Inquire Service",
+        msgMail: "Inquiry about Industrial Plant Layout and Production Lines"
+      }
+    ],
+    sectores: {
+      desc: "Click on your sector of interest to jump directly to the relevant machinery and projects:",
+      salto: "⚡ Direct jump to experience",
+      btnVer: "View projects →",
+      lista: [
+        {id:"metalmecanica", i:"⚙️", n:"Metalworking & Machinery"},
+        {id:"plastica", i:"♻️", n:"Plastics & Polymers"},
+        {id:"farmaceutica", i:"💊", n:"Pharmaceutical & Cosmetics"},
+        {id:"alimentos", i:"🥫", n:"Food & Beverage"},
+        {id:"aeronautica", i:"✈️", n:"Aviation & Ground Support"},
+        {id:"educacion", i:"🎓", n:"Education, Labs & Museums"},
+        {id:"estructural", i:"🏗️", n:"Modular Housing & Storage Structures"}
+      ]
+    },
+    metricas: {
+      desc: "Comprehensive mastery of mechanical CAD software accumulating a massive portfolio of engineering deliverables:",
+      chips: [
+        { txt: "📦 ~18,000 3D Part / Solid CAD Files", destino: "#proyectos" },
+        { txt: "🧩 ~5,000 3D Assembly CAD Files", destino: "#proyectos" },
+        { txt: "📐 +9,000 Technical Drawings in multiple extensions", destino: "#proyectos" },
+        { txt: "💻 Solid Edge & AutoCAD (Full Mastery)", destino: "#tecnologias" }
+      ]
+    },
+    areas: [
+      {
+        t:"⚙️ Mechanical Drafting, Design & Manufacturing",
+        c:[
+          "3D parametric modeling of simple and complex mechanical components",
+          "Turnkey mechanical system and production machine design",
+          "Production lines, equipment adaptation, and industrial retrofit",
+          "Manufacturing supervision, shop assembly, tuning, and on-site installation"
+        ]
+      },
+      {
+        t:"📐 Industrial Facilities, Infrastructure & Plant Layout",
+        c:[
+          "Drafting and layout design of mechanical, structural, and physical installations",
+          "Supply line, conveyor, packaging, and material handling engineering",
+          "Full-scale 1:1 3D plant survey and measurement on active factory floors",
+          "Plant evacuation maps, architectural schematics, and facility blueprints"
+        ]
+      },
+      {
+        t:"🛠️ Materials & Manufacturing Engineering",
+        c:[
+          "Sanitary Stainless Steel design for pharmaceutical and food grade machinery",
+          "Cold Roll steel sheet and heavy structural engineering profiles",
+          "Machining and structural design using Resins, Wood, and Engineering Plastics",
+          "Modular, telescopic, and self-supporting structural enclosures"
+        ]
+      }
+    ],
+    experiencia: [
+      {
+        id:"exp_inalgrifos",
+        tit: "INALGRIFOS S.A. — Product Engineer & Designer",
+        sub: "Product Development Department",
+        fec: "2005 – 2008",
+        list: [
+          "Engineer and designer in the <strong>Product Department</strong>.",
+          "Design and 3D modeling of plumbing, valves, fixtures, and metalworking components."
+        ]
+      },
+      {
+        id:"exp_schering",
+        tit: "SCHERING COLOMBIANA PHARMACEUTICAL PLANT — Decommissioning Assistant Director",
+        sub: "Pharmaceutical Industry",
+        fec: "2010 – 2011",
+        list: [
+          "Technical assistant direction of the complete plant decommissioning of <strong>Planta Schering Colombiana</strong>.",
+          "Coordination, line disassembly, and facility adaptation."
+        ]
+      },
+      {
+        id:"exp_mmf",
+        tit: "MMF FREE TRADE ZONE — Design & Manufacturing Direction",
+        sub: "Manufacturera Mundial Farmacéutica",
+        fec: "2015",
+        list: [
+          "Design and manufacturing direction for the <strong>tablet coating production line</strong>.",
+          "Design of pharmaceutical tablet coating pan and stainless steel bottle blowing packaging unit."
+        ]
+      },
+      {
+        id:"exp_umng",
+        tit: "MILITARY UNIVERSITY NUEVA GRANADA (Cajicá) & ALPA MACHINE GROUP S.A.S.",
+        sub: "Laboratories & Telecommunications Museum",
+        fec: "Key Projects",
+        list: [
+          "Design, manufacturing, and technical direction of multiple lab and museum projects in partnership with <strong>Alpa Machine Group S.A.S.</strong>",
+          "Design, manufacturing direction, and pit installation of the <strong>Telescopic Seismic Testing Table</strong>.",
+          "Design, manufacturing, and assembly of the <strong>Modular Structural Housing Model</strong> (resin, wood, engineering plastics)."
+        ]
+      },
+      {
+        id:"exp_empresas",
+        tit: "MULTIDISCIPLINARY INDUSTRIAL PROJECTS ACROSS MULTIPLE COMPANIES",
+        sub: "Previtec, ASEMAQ, Electrimec, INGPACK, Tersell, SIGMA & SILOS, Alpa Machine Group",
+        fec: "Continuous Career (+22 Years)",
+        desc: "Active participation in design, full manufacturing drawings, and shop fabrication:",
+        list: [
+          "<span id='exp_previtec'><strong>Previtec Ltda.</strong>: Design and complete drawings for deep blister sealer and multi-range liquid filler in stainless steel.</span>",
+          "<span id='exp_asemaq'><strong>ASEMAQ Ltda.</strong>: Complete manufacturing drawings for coating drum, glass bottle crimper, and liquid fillers.</span>",
+          "<span id='exp_electrimec'><strong>Electrimec S.A.S.</strong>: Stainless steel bottle blower line and folded carton box feeder conveyor.</span>",
+          "<span id='exp_ingpack'><strong>INGPACK S.A.S.</strong>: Full fabrication drawings for 250, 500, and 1000 kg industrial freight elevators.</span>",
+          "<span id='exp_tersell'><strong>Tersell Ltda.</strong>: Design, fabrication, and tuning of 1.5 x 3.0 x 1.0 m Ball Cloud unit for A LA PEPA.</span>",
+          "<span id='exp_sigma'><strong>SIGMA & SILOS S.A.S.</strong>: Full manufacturing drawings for passenger boarding stairs and maintenance platforms for <strong>Copa Airlines</strong> and <strong>Avianca</strong>.</span>",
+          "<span id='exp_bimbo'><strong>Alpa Machine Group S.A.S. / BIMBO (Tenjo)</strong>: Stainless steel steam chamber for conveyor belt magazine (4 x 20 x 5 meters).</span>",
+          "<span id='exp_alpa'><strong>Alpa Machine Group S.A.S. / ECO BALANCE TECHNOLOGIES (Mexico)</strong>: Self-sustaining multi-terrain storage structure (8.0 x 5.0 x 7.5 m).</span>",
+          "<span id='exp_kelloggs'><strong>Kellogg's (Bogotá)</strong>: Full 1:1 scale 3D factory floor survey and layout drafting.</span>",
+          "<span id='exp_lasante'><strong>Laboratorios La Santé</strong>: Aluminum foil tensioning system design on Hulmann blister packaging machine.</span>",
+          "<span id='exp_camber'><strong>Camber Ltda.</strong>: Paint can filling and lid press line design.</span>",
+          "<span id='exp_lavanser'><strong>Lavanser Ltda.</strong>: Factory evacuation blueprints and facility layouts.</span>"
+        ]
+      }
+    ],
+    proyectos: [
+      {
+        t: "Telescopic Seismic Testing Table",
+        sec: "Education & Labs",
+        d: "Design, manufacturing direction, and pit installation for university structural labs.",
+        alcance: "Full mechanical design, telescopic structural column sizing, shop manufacturing direction, and pit installation.",
+        cliente: "MILITARY UNIVERSITY NUEVA GRANADA 'UMNG' (Cajicá) / Alpa Machine Group S.A.S.",
+        materiales: "Heavy structural steel frame for dynamic tests, vertical telescopic guide columns, perimeter safety guardrails, and top shaker platform."
+      },
+      {
+        t: "Modular Housing Structural Model",
+        sec: "Structures & Materials",
+        d: "Design, fabrication, and installation of modular scale housing model.",
+        alcance: "3D parametric modeling of interlocking components, precision fabrication, and modular trailer assembly.",
+        cliente: "MILITARY UNIVERSITY NUEVA GRANADA 'UMNG' (Cajicá) / Alpa Machine Group S.A.S.",
+        materiales: "Resin, wood, engineering plastics, and mobile metal trailer chassis."
+      },
+      {
+        t: "Conveyor Belt Magazine Steam Chamber (4 x 20 x 5 m)",
+        sec: "Food & Beverage",
+        d: "Design collaboration, manufacturing direction, shop assembly, and on-site installation.",
+        alcance: "Large-scale sanitary stainless steel chamber for continuous steam conditioning of conveyor belts.",
+        cliente: "BIMBO (Tenjo) / Alpa Machine Group S.A.S.",
+        materiales: "Sanitary grade Stainless Steel, overall dimensions: 4 x 20 x 5 meters."
+      },
+      {
+        t: "In-line Bottle Blower for Packaging Line",
+        sec: "Pharmaceutical & Packaging",
+        d: "Design, shop assembly collaboration, adjustment, and on-site line installation.",
+        alcance: "Automated bottle de-dusting and air-blowing system feeding continuous pharmaceutical filling machines.",
+        cliente: "MANUFACTURERA MUNDIAL FARMACÉUTICA 'MMF' (Free Trade Zone) / Electrimec S.A.S.",
+        materiales: "Pharma-grade Stainless Steel, pneumatic manifold, and sanitary conveyor belt."
+      },
+      {
+        t: "Deep Blister Sealing Machine",
+        sec: "Plastics & Pharma",
+        d: "Design and complete manufacturing shop drawings for compact benchtop sealer.",
+        alcance: "Complete detail drawings for machining heating platen, sealing press mechanism, and stainless steel enclosure.",
+        cliente: "Previtec Ltda.",
+        materiales: "Stainless steel, heating plates, pneumatic pressing actuators, and standard hardware."
+      },
+      {
+        t: "Multi-Range Liquid Filling Machine",
+        sec: "Cosmetics & Pharma",
+        d: "Design and complete manufacturing drawings for precision volumetric liquid dosing.",
+        alcance: "3D modeling of piston pump heads, anti-drip nozzle assemblies, and adjustable height frame.",
+        cliente: "ASEMAQ Ltda. / Previtec Ltda.",
+        materiales: "Sanitary Stainless Steel, engineering polymers, and front control operator panel."
+      },
+      {
+        t: "Passenger Boarding Stairs & Maintenance Platforms",
+        sec: "Aviation & Infrastructure",
+        d: "Design and complete manufacturing shop drawings for airport ground support.",
+        alcance: "Structural engineering of towable passenger boarding stairs and elevated aircraft maintenance stands.",
+        cliente: "Copa Airlines & Avianca / SIGMA & SILOS S.A.S.",
+        materiales: "Structural steel chassis, anti-slip treads, safety railings, and rolling caster system."
+      },
+      {
+        t: "Pharmaceutical Tablet Coating Pan",
+        sec: "Pharmaceutical",
+        d: "Complete shop drawings design, fabrication supervision, and final assembly.",
+        alcance: "Detail engineering of rotating coating pan, spray gun manifold, exhaust ducting, and drive skid.",
+        cliente: "MANUFACTURERA MUNDIAL FARMACÉUTICA 'MMF' (Free Trade Zone) / ASEMAQ LTDA.",
+        materiales: "Mirror-polished sanitary Stainless Steel, pumping skid, and sanitary tri-clamp piping."
+      },
+      {
+        t: "Industrial Freight Elevators (250, 500 & 1000 Kg)",
+        sec: "Material Handling & Lifts",
+        d: "Design and complete manufacturing drawings for industrial material lifts.",
+        alcance: "Structural guide mast design, lift carriage, counterweight, and hoist cable/chain system.",
+        cliente: "INGPACK S.A.S.",
+        materiales: "Heavy structural steel profiles, reinforced cabin, perimeter mesh, and anchor plates."
+      },
+      {
+        t: "Glass Bottle Crimping Machine",
+        sec: "Cosmetics & Pharma",
+        d: "Design and complete manufacturing drawings for benchtop crimping machine.",
+        alcance: "Machining detail drawings for crimping collets, bottle centering chuck, and pneumatic actuator.",
+        cliente: "ASEMAQ Ltda.",
+        materiales: "Treated tool steel, stainless steel components, and base stand with safety button."
+      },
+      {
+        t: "Spherical Ball Cloud Structure (1.5 x 3.0 x 1.0 m)",
+        sec: "Metalworking & Entertainment",
+        d: "Design, fabrication participation, and operational commissioning.",
+        alcance: "Curved thermoformed and metal structure for pneumatic ball agitation and circulation.",
+        cliente: "A LA PEPA (Bogotá) / Tersell Ltda.",
+        materiales: "Cold Roll steel frame and transparent engineering plastics (1.5 x 3.0 x 1.0 m)."
+      },
+      {
+        t: "Self-Sustaining Storage Structure (8.0 x 5.0 x 7.5 m)",
+        sec: "Structures & Storage",
+        d: "Preliminary design, final engineering, and subsequent multi-terrain versions.",
+        alcance: "3D modular structural engineering of high-clearance outdoor weather-resistant storage frame.",
+        cliente: "ECO BALANCE TECHNOLOGIES (Mexico) / Alpa Machine Group S.A.S.",
+        materiales: "Tubular structural steel truss framework and modular tensile canopy (8.0 x 5.0 x 7.5 m)."
+      },
+      {
+        t: "Powder Filling Monoblock Machine",
+        sec: "Pharma & Food",
+        d: "Enclosure design and auger screw volumetric powder filling system.",
+        alcance: "Assembly and detail drawings for enclosed hygienic powder filling operation.",
+        cliente: "Pharmaceutical / Cosmetics Industry",
+        materiales: "Stainless Steel and sanitary acrylic protective enclosure."
+      },
+      {
+        t: "Aluminum Foil Tensioning System on Hulmann Blister Machine",
+        sec: "Pharma & Packaging",
+        d: "Design and mechanical retrofit of aluminum foil feed tensioner.",
+        alcance: "Mechanical guidance upgrade eliminating web drift during continuous blister forming.",
+        cliente: "Laboratorios La Santé",
+        materiales: "Precision ground shafts, guide rollers, and aluminum/stainless brackets."
+      },
+      {
+        t: "Folded Carton Box Feeder Conveyor",
+        sec: "Packaging & Automation",
+        d: "Inclined magazine hopper and carton feeding conveyor design.",
+        alcance: "3D design of carton blank feeder synchronized with continuous packaging line.",
+        cliente: "Electrimec S.A.S.",
+        materiales: "Steel frame, modular plastic conveyor belt, and adjustable guide rails."
+      },
+      {
+        t: "Coin Box Conveyor Handling System",
+        sec: "Material Handling & Logistics",
+        d: "Mechanical design of heavy box conveying and transfer line.",
+        alcance: "High-load roller and belt conveyor framework for continuous coin carton transit.",
+        cliente: "Logistics & Cash Handling Sector",
+        materiales: "Heavy duty steel frame, geared motors, and impact-resistant steel rollers."
+      },
+      {
+        t: "Plant Evacuation Plans & Facility Layouts",
+        sec: "Safety & Facility Layout",
+        d: "Industrial facility survey and safety blueprint drafting.",
+        alcance: "2D architectural layout drafting, evacuation route plotting, and emergency device placement.",
+        cliente: "Lavanser Ltda.",
+        materiales: "Standardized CAD architectural and industrial safety blueprints."
+      },
+      {
+        t: "Paint Bucket Filling & Lid Pressing Line",
+        sec: "Chemicals & Paint",
+        d: "Heavy conveyor design, volumetric liquid dosing station, and automatic lid press.",
+        alcance: "Heavy-duty roller conveyor design, paint dispenser, and lid pressing head.",
+        cliente: "Camber Ltda.",
+        materiales: "Structural steel frame, heavy pneumatic pressing cylinders, and fluid valves."
+      },
+      {
+        t: "Full 1:1 Scale 3D Plant Survey & Digital Layout",
+        sec: "Food & Plant Layout",
+        d: "Precision 3D factory measurement and comprehensive equipment mapping.",
+        alcance: "Full 3D digitization of active plant halls, installed processing machinery, and utility piping.",
+        cliente: "Kellogg's (Bogotá)",
+        materiales: "True-scale 3D CAD files in Solid Edge and AutoCAD."
+      }
+    ],
+    catsTech: [["TODOS","All"],["CAD","CAD Software"],["MAT","Materials"],["MAQ","Machinery Types"],["SECT","Sectors"]],
+    fortalezas: [
+      {n:"3D Mechanical Modeling & Design (Solid Edge & AutoCAD)",v:98},
+      {n:"Full manufacturing shop drawing & detail drafting",v:96},
+      {n:"Custom industrial machinery and production system design",v:95},
+      {n:"Plant decommissioning, adaptation & machinery retrofit",v:92},
+      {n:"Full-scale 3D industrial facility & layout survey",v:94},
+      {n:"Engineering solutions for pharma, plastics, and food sectors",v:95}
+    ],
+    modal: {
+      tit:"✉️ Professional Contact",
+      btnMailTo: "✉️ Send Email to: jobycad@gmail.com",
+      btnMail: "📋 Copy Email: jobycad@gmail.com",
+      btnVcf: "📇 Download Contact Card (.vcf)",
+      btnPrint: "🖨️ Print / Save Portfolio as PDF"
+    },
+    footer: "Ing. Orlando Bernal Y. · Mechanical Engineer · Bogotá – Colombia<br>Drafting · 3D Mechanical Design · Manufacturing · Solid Edge & AutoCAD · jobycad@gmail.com"
+  }
+};
+
+const uiLocales = {
+  es:{language:"Cambiar idioma",theme:"Cambiar tema (Claro/Oscuro)",print:"Imprimir / Exportar PDF",search:"🔍 Filtrar software/campo...",sector:"SECTOR",challenge:"📐 Alcance:",impact:"🏢 Cliente:",navigating:"Navegando a",copied:"Copiado al portapapeles",copyFail:"No se pudo copiar automáticamente",vcf:"Contacto VCF guardado",projectMsg:"Consulta sobre el proyecto: "},
+  en:{language:"Change language",theme:"Change theme (Light/Dark)",print:"Print / Export PDF",search:"🔍 Filter software/field...",sector:"SECTOR",challenge:"📐 Scope:",impact:"🏢 Client:",navigating:"Navigating to",copied:"Copied to clipboard",copyFail:"Unable to copy automatically",vcf:"VCF contact saved",projectMsg:"Inquiry about project: "}
+};
+
+const techsBase = [
+ {c:"CAD",n:"Solid Edge (Sólidos 3D & Ensambles)"},{c:"CAD",n:"AutoCAD (2D & 3D)"},{c:"CAD",n:"Modelado Paramétrico 3D"},
+ {c:"CAD",n:"Planos Totales de Fabricación"},{c:"CAD",n:"Planos de Ensamble y Listas BOM"},{c:"CAD",n:"Planos de Evacuación e Instalaciones"},
+ {c:"MAT",n:"Acero Inoxidable (Grado Sanitario / Farmacéutico)"},{c:"MAT",n:"Cold Roll y Lámina Metálica"},{c:"MAT",n:"Perfiles Estructurales de Acero"},
+ {c:"MAT",n:"Plásticos de Ingeniería"},{c:"MAT",n:"Resinas y Materiales Compuestos"},{c:"MAT",n:"Madera Técnica y Modelos"},
+ {c:"MAQ",n:"Bombos de Recubrimiento de Comprimidos"},{c:"MAQ",n:"Cámaras de Vapor para Bandas (4x20x5m)"},{c:"MAQ",n:"Mesas Telescópicas para Pruebas Sísmicas"},
+ {c:"MAQ",n:"Elevadores de Carga (250, 500, 1000 Kg)"},{c:"MAQ",n:"Selladoras de Blisters Profundos"},{c:"MAQ",n:"Llenadoras de Líquidos Multirrango"},
+ {c:"MAQ",n:"Sopladoras de Frascos en Línea"},{c:"MAQ",n:"Crimpadoras para Envases de Vidrio"},{c:"MAQ",n:"Líneas de Llenado y Tapado de Pintura"},
+ {c:"MAQ",n:"Escaleras para Pasajeros y Plataformas Aeronáuticas"},{c:"MAQ",n:"Estructuras Auto Sustentables (8x5x7.5m)"},{c:"MAQ",n:"Bandas Surtidoras de Cajas Plegadas"},
+ {c:"SECT",n:"Industria Farmacéutica"},{c:"SECT",n:"Industria Cosmética"},{c:"SECT",n:"Industria Metalmecánica"},
+ {c:"SECT",n:"Industria Plástica"},{c:"SECT",n:"Industria de Alimentos (Bimbo / Kellogg's)"},{c:"SECT",n:"Aeronáutica (Avianca / Copa Airlines)"},
+ {c:"SECT",n:"Sector Universitario (UMNG)"},{c:"SECT",n:"Levantamiento 3D a Escala Real en Planta"}
+];
+
+const vectorBlueprints = [
+  // 0. Mesa Sísmica UMNG
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g0)"/>
+    <rect x="120" y="30" width="160" height="18" rx="3" stroke="#dfb755" stroke-width="2" fill="#0e2343"/>
+    <rect x="150" y="16" width="100" height="14" stroke="#4d8bf5" stroke-width="1.5" fill="#0a1a2e"/>
+    <line x1="140" y1="48" x2="140" y2="130" stroke="#4d8bf5" stroke-width="3"/>
+    <line x1="260" y1="48" x2="260" y2="130" stroke="#4d8bf5" stroke-width="3"/>
+    <line x1="160" y1="48" x2="160" y2="120" stroke="#2b66bf" stroke-width="2" stroke-dasharray="4 2"/>
+    <line x1="240" y1="48" x2="240" y2="120" stroke="#2b66bf" stroke-width="2" stroke-dasharray="4 2"/>
+    <line x1="140" y1="50" x2="260" y2="125" stroke="#c29938" stroke-width="1.5"/>
+    <line x1="260" y1="50" x2="140" y2="125" stroke="#c29938" stroke-width="1.5"/>
+    <rect x="100" y="130" width="200" height="14" stroke="#4d8bf5" stroke-width="2" fill="#09182d"/>
+    <text x="200" y="27" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">SEISMIC SHAKER TABLE</text>
+    <text x="200" y="156" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">UMNG / TELESCOPIC MECHANISM CAD</text>
+  </svg>`,
+
+  // 1. Estructura Habitacional
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g1" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g1)"/>
+    <polygon points="200,20 120,55 280,55" stroke="#dfb755" stroke-width="2" fill="#0c1d35"/>
+    <rect x="130" y="55" width="140" height="60" stroke="#4d8bf5" stroke-width="1.8" fill="#09182d"/>
+    <rect x="145" y="70" width="30" height="30" stroke="#dfb755" stroke-width="1.2" fill="#081528"/>
+    <rect x="195" y="70" width="30" height="45" stroke="#2b66bf" stroke-width="1.2" fill="#081528"/>
+    <rect x="235" y="70" width="25" height="30" stroke="#dfb755" stroke-width="1.2" fill="#081528"/>
+    <rect x="110" y="115" width="180" height="10" stroke="#c29938" stroke-width="1.5" fill="#142c4a"/>
+    <circle cx="140" cy="132" r="8" stroke="#dfb755" stroke-width="2"/>
+    <circle cx="260" cy="132" r="8" stroke="#dfb755" stroke-width="2"/>
+    <text x="200" y="156" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">MODULAR HOUSING UNIT / UMNG</text>
+  </svg>`,
+
+  // 2. Cámara de Vapor Bimbo
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g2" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g2)"/>
+    <rect x="50" y="35" width="300" height="75" rx="4" stroke="#4d8bf5" stroke-width="2" fill="#0a1d35"/>
+    <line x1="50" y1="72" x2="350" y2="72" stroke="#dfb755" stroke-width="2" stroke-dasharray="6 3"/>
+    <circle cx="90" cy="72" r="14" stroke="#2b66bf" stroke-width="1.5"/>
+    <circle cx="200" cy="72" r="14" stroke="#2b66bf" stroke-width="1.5"/>
+    <circle cx="310" cy="72" r="14" stroke="#2b66bf" stroke-width="1.5"/>
+    <path d="M 90 110 L 90 125 M 150 110 L 150 125 M 250 110 L 250 125 M 310 110 L 310 125" stroke="#4d8bf5" stroke-width="2"/>
+    <text x="200" y="55" fill="#ffde8a" font-size="8" text-anchor="middle" font-family="monospace">STAINLESS STEEL 4x20x5m CHAMBER</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">BIMBO TENJO / CONVEYOR STEAM TUNNEL</text>
+  </svg>`,
+
+  // 3. Sopladora MMF
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g3" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g3)"/>
+    <rect x="60" y="80" width="280" height="14" stroke="#4d8bf5" stroke-width="1.8" fill="#0d2445"/>
+    <rect x="140" y="30" width="120" height="50" stroke="#dfb755" stroke-width="2" fill="#0a1a2e"/>
+    <line x1="170" y1="30" x2="170" y2="70" stroke="#10b981" stroke-width="2"/>
+    <line x1="230" y1="30" x2="230" y2="70" stroke="#10b981" stroke-width="2"/>
+    <rect x="85" y="62" width="16" height="18" rx="2" stroke="#fff" stroke-width="1" fill="#1b3964"/>
+    <rect x="192" y="62" width="16" height="18" rx="2" stroke="#fff" stroke-width="1" fill="#1b3964"/>
+    <rect x="295" y="62" width="16" height="18" rx="2" stroke="#fff" stroke-width="1" fill="#1b3964"/>
+    <text x="200" y="46" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">AIR CLEANING &amp; BLOWING</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">MMF PHARMA / BOTTLE BLOWER CAD</text>
+  </svg>`,
+
+  // 4. Blistera Previtec
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g4" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g4)"/>
+    <rect x="110" y="25" width="180" height="95" rx="6" stroke="#4d8bf5" stroke-width="2" fill="#0e2343"/>
+    <rect x="135" y="45" width="60" height="40" stroke="#dfb755" stroke-width="1.5" fill="#09182d"/>
+    <rect x="205" y="45" width="60" height="40" stroke="#dfb755" stroke-width="1.5" fill="#09182d"/>
+    <circle cx="165" cy="100" r="5" fill="#10b981"/>
+    <circle cx="235" cy="100" r="5" fill="#ef4444"/>
+    <text x="200" y="38" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">HEATED SEALING PLATEN</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">PREVITEC / DEEP BLISTER SEALER</text>
+  </svg>`,
+
+  // 5. Llenadora ASEMAQ
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g5" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g5)"/>
+    <rect x="100" y="35" width="120" height="75" rx="4" stroke="#4d8bf5" stroke-width="2" fill="#0b1e39"/>
+    <circle cx="270" cy="55" r="22" stroke="#dfb755" stroke-width="2" fill="#08182f"/>
+    <path d="M 220 55 L 248 55" stroke="#dfb755" stroke-width="2"/>
+    <line x1="270" y1="77" x2="270" y2="110" stroke="#10b981" stroke-width="2.5"/>
+    <rect x="260" y="112" width="20" height="22" rx="2" stroke="#fff" stroke-width="1" fill="#162e52"/>
+    <text x="160" y="55" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">PISTON PUMP</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">ASEMAQ / MULTI-RANGE LIQUID FILLER</text>
+  </svg>`,
+
+  // 6. Escalera Copa/Avianca
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g6" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g6)"/>
+    <polygon points="100,115 250,30 290,30 290,115" stroke="#dfb755" stroke-width="2" fill="#091b32"/>
+    <line x1="100" y1="115" x2="250" y2="30" stroke="#4d8bf5" stroke-width="2.5"/>
+    <line x1="125" y1="100" x2="140" y2="100" stroke="#fff" stroke-width="1.5"/>
+    <line x1="155" y1="84" x2="170" y2="84" stroke="#fff" stroke-width="1.5"/>
+    <line x1="185" y1="68" x2="200" y2="68" stroke="#fff" stroke-width="1.5"/>
+    <line x1="215" y1="52" x2="230" y2="52" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="110" cy="125" r="7" stroke="#4d8bf5" stroke-width="2"/>
+    <circle cx="280" cy="125" r="7" stroke="#4d8bf5" stroke-width="2"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">SIGMA &amp; SILOS / PASSENGER STAIRS</text>
+  </svg>`,
+
+  // 7. Bombo MMF
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g7" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g7)"/>
+    <circle cx="200" cy="70" r="38" stroke="#dfb755" stroke-width="2" fill="#0c1d35"/>
+    <circle cx="200" cy="70" r="18" stroke="#4d8bf5" stroke-width="1.5" fill="#071220"/>
+    <line x1="140" y1="120" x2="200" y2="70" stroke="#2b66bf" stroke-width="3"/>
+    <rect x="110" y="115" width="180" height="12" stroke="#dfb755" stroke-width="1.5" fill="#09182d"/>
+    <text x="200" y="73" fill="#ffde8a" font-size="7" text-anchor="middle" font-family="monospace">COATING PAN</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">MMF / PHARMACEUTICAL COATER</text>
+  </svg>`,
+
+  // 8. Elevador Ingpack
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g8" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g8)"/>
+    <rect x="150" y="15" width="100" height="120" stroke="#4d8bf5" stroke-width="2" fill="#0a1a2e"/>
+    <rect x="165" y="50" width="70" height="50" stroke="#dfb755" stroke-width="1.8" fill="#132c4e"/>
+    <line x1="200" y1="15" x2="200" y2="50" stroke="#ffde8a" stroke-width="2"/>
+    <text x="200" y="78" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">250 - 1000 Kg</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">INGPACK / FREIGHT ELEVATOR CAD</text>
+  </svg>`,
+
+  // 9. Crimpadora ASEMAQ
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g9" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g9)"/>
+    <rect x="140" y="25" width="120" height="95" rx="4" stroke="#4d8bf5" stroke-width="2" fill="#091b32"/>
+    <rect x="175" y="40" width="50" height="35" stroke="#dfb755" stroke-width="1.5" fill="#071220"/>
+    <circle cx="200" cy="58" r="10" stroke="#10b981" stroke-width="1.5"/>
+    <text x="200" y="95" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">CRIMP COLLET</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">ASEMAQ / GLASS BOTTLE CRIMPER</text>
+  </svg>`,
+
+  // 10. Nube Balotera Tersell
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g10" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g10)"/>
+    <path d="M 120 90 C 100 90 90 70 110 50 C 120 30 160 25 180 45 C 200 20 250 25 260 50 C 290 50 300 80 280 95 C 260 110 130 110 120 90 Z" stroke="#dfb755" stroke-width="2" fill="#0c2242"/>
+    <circle cx="160" cy="65" r="4" fill="#ffde8a"/>
+    <circle cx="190" cy="75" r="4" fill="#ffde8a"/>
+    <circle cx="220" cy="60" r="4" fill="#ffde8a"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">TERSELL / A LA PEPA (1.5x3x1m)</text>
+  </svg>`,
+
+  // 11. Estructura Eco Balance
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g11" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g11)"/>
+    <polygon points="100,60 200,25 300,60 280,125 120,125" stroke="#dfb755" stroke-width="2" fill="#0a1d35"/>
+    <line x1="100" y1="60" x2="300" y2="60" stroke="#4d8bf5" stroke-width="1.5"/>
+    <line x1="200" y1="25" x2="200" y2="125" stroke="#4d8bf5" stroke-width="1.5"/>
+    <text x="200" y="50" fill="#ffde8a" font-size="7.5" text-anchor="middle" font-family="monospace">8.0 x 5.0 x 7.5 m</text>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">ECO BALANCE / SELF-SUSTAINING FRAME</text>
+  </svg>`,
+
+  // 12. Monobloque Polvos
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g12" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g12)"/>
+    <rect x="130" y="25" width="140" height="95" stroke="#4d8bf5" stroke-width="2" fill="#0a1c33"/>
+    <polygon points="180,35 220,35 208,65 192,65" stroke="#dfb755" stroke-width="1.5" fill="#132c4e"/>
+    <line x1="200" y1="65" x2="200" y2="95" stroke="#ffde8a" stroke-width="2"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">POWDER FILLING MONOBLOCK</text>
+  </svg>`,
+
+  // 13. Tensor Foil La Santé
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g13" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g13)"/>
+    <circle cx="120" cy="65" r="20" stroke="#dfb755" stroke-width="2" fill="#0d2444"/>
+    <circle cx="200" cy="50" r="12" stroke="#4d8bf5" stroke-width="1.5"/>
+    <circle cx="280" cy="70" r="16" stroke="#dfb755" stroke-width="2" fill="#0d2444"/>
+    <path d="M 120 45 L 200 38 L 280 54" stroke="#ffde8a" stroke-width="2"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">LA SANTÉ / FOIL TENSIONING UNIT</text>
+  </svg>`,
+
+  // 14. Banda Cajas Electrimec
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g14" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g14)"/>
+    <polygon points="120,30 160,30 145,65 105,65" stroke="#dfb755" stroke-width="1.8" fill="#0a1d35"/>
+    <rect x="90" y="70" width="220" height="16" stroke="#4d8bf5" stroke-width="2" fill="#0d213d"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">ELECTRIMEC / CARTON BOX FEEDER</text>
+  </svg>`,
+
+  // 15. Bandas Monedas
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g15" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g15)"/>
+    <rect x="70" y="60" width="260" height="20" stroke="#4d8bf5" stroke-width="2" fill="#0a1a2e"/>
+    <rect x="110" y="40" width="30" height="20" stroke="#dfb755" stroke-width="1.5" fill="#162e52"/>
+    <rect x="190" y="40" width="30" height="20" stroke="#dfb755" stroke-width="1.5" fill="#162e52"/>
+    <rect x="270" y="40" width="30" height="20" stroke="#dfb755" stroke-width="1.5" fill="#162e52"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">HEAVY BOX HANDLING CONVEYORS</text>
+  </svg>`,
+
+  // 16. Planos Evacuacion Lavanser
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g16" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g16)"/>
+    <rect x="80" y="25" width="240" height="95" stroke="#4d8bf5" stroke-width="2" fill="#08182f"/>
+    <line x1="160" y1="25" x2="160" y2="120" stroke="#2b66bf" stroke-width="1.5"/>
+    <line x1="80" y1="75" x2="240" y2="75" stroke="#2b66bf" stroke-width="1.5"/>
+    <path d="M 120 100 L 120 50 L 280 50" stroke="#10b981" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">LAVANSER / FACILITY EVACUATION MAP</text>
+  </svg>`,
+
+  // 17. Canecas Pintura Camber
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g17" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g17)"/>
+    <rect x="70" y="80" width="260" height="15" stroke="#4d8bf5" stroke-width="2" fill="#091b32"/>
+    <rect x="130" y="30" width="40" height="50" stroke="#dfb755" stroke-width="1.5" fill="#071220"/>
+    <rect x="230" y="25" width="40" height="55" stroke="#ef4444" stroke-width="1.5" fill="#071220"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">CAMBER / PAINT DRUM FILL &amp; CAP</text>
+  </svg>`,
+
+  // 18. Kellogg's Levantamiento
+  `<svg viewBox="0 0 400 165" class="svg-tech" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="165" fill="#071220"/>
+    <defs><pattern id="g18" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#10253f" stroke-width="0.7"/></pattern></defs>
+    <rect width="400" height="165" fill="url(#g18)"/>
+    <polygon points="60,110 180,30 340,50 220,130" stroke="#4d8bf5" stroke-width="1.8" fill="#0c1d35"/>
+    <rect x="130" y="65" width="50" height="30" stroke="#dfb755" stroke-width="1.5" fill="#132c4e"/>
+    <rect x="220" y="60" width="40" height="25" stroke="#dfb755" stroke-width="1.5" fill="#132c4e"/>
+    <text x="200" y="154" fill="#8fb4ff" font-size="7.5" text-anchor="middle" font-family="monospace">KELLOGG'S BOGOTÁ / 3D PLANT SURVEY</text>
+  </svg>`
+];
+
+const iconosProyectos = [
+  "🔬", "🏠", "🍞", "🍾", "📦", "🧴", "✈️", "💊", "🏗️", "🧪", "☁️", "🎪", "⚙️", "🎞️", "📦", "🪙", "🗺️", "🎨", "🏭"
+];
+
+let idiomaActual = "es";
+
+function cambiarIdioma(lang) {
+  idiomaActual = (lang === 'en') ? 'en' : 'es';
+  document.documentElement.lang = idiomaActual;
+  try { localStorage.setItem('orlando_cv_lang', idiomaActual); } catch(e){}
+  const t = i18n[idiomaActual];
+  const ui = uiLocales[idiomaActual];
+
+  // Atributos de accesibilidad y placeholders
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const path = el.getAttribute('data-i18n-title').split('.');
+    let val = ui;
+    path.forEach(k => val = val ? val[k] : null);
+    if(val) el.title = val;
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const path = el.getAttribute('data-i18n-aria').split('.');
+    let val = ui;
+    path.forEach(k => val = val ? val[k] : null);
+    if(val) el.setAttribute('aria-label', val);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const path = el.getAttribute('data-i18n-placeholder').split('.');
+    let val = ui;
+    path.forEach(k => val = val ? val[k] : null);
+    if(val) el.placeholder = val;
+  });
+
+  // Textos estáticos data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const path = el.getAttribute('data-i18n').split('.');
+    let val = t;
+    path.forEach(k => val = val ? val[k] : null);
+    if(val) el.innerHTML = val;
+  });
+
+  // Tags en header
+  document.getElementById('headerTags').innerHTML = t.tagsFuncionales.map(tag => `
+    <button class="tag-btn" onclick="saltarASeccion('${tag.destino}', '${tag.texto}')" title="${tag.hint}">
+      <span>${tag.texto}</span>
+      <span class="flecha">↓</span>
+    </button>
+  `).join('');
+
+  // Perfil
+  document.getElementById('perfilText').innerHTML = t.perfil.map(p => `<p>${p}</p>`).join('');
+
+  // Servicios
+  document.getElementById('gridServicios').innerHTML = t.servicios.map((s, i) => `
+    <div class="servicio-card" id="servicio_${i}">
+      <span class="servicio-badge">${s.badge}</span>
+      <h3>${s.tit}</h3>
+      <p>${s.desc}</p>
+      <ul class="servicio-items">
+        ${s.items.map(it => `<li>${it}</li>`).join('')}
+      </ul>
+      <a href="mailto:jobycad@gmail.com?subject=${encodeURIComponent(s.msgMail)}" class="btn-servicio-mail">
+        ${s.btnCotizar}
+      </a>
+    </div>
+  `).join('');
+
+  // Sectores
+  document.getElementById('gridSectores').innerHTML = t.sectores.lista.map(s => `
+    <div class="sector-item" onclick="direccionarASector('${s.id}')">
+      <span style="font-size:1.35rem">${s.i}</span>
+      <span>${s.n}</span>
+      <span class="hint-ir">${t.sectores.btnVer}</span>
+    </div>
+  `).join('');
+
+  // Chips Métricas CAD
+  document.getElementById('cadChips').innerHTML = t.metricas.chips.map(c => `
+    <button class="chip-btn" onclick="saltarASeccion('${c.destino}', '${c.txt}')">${c.txt}</button>
+  `).join('');
+
+  // Áreas
+  document.getElementById('contAreas').innerHTML = t.areas.map((a,i) => `
+    <div class="acordeon${i===0?' abierto':''}" id="area_${i}">
+      <div class="cab" onclick="toggleAcordeon(this)">
+        <span>${a.t}</span>
+        <span class="icono">＋</span>
+      </div>
+      <div class="cuerpo">
+        <ul style="padding-left:20px;font-size:.92rem;color:var(--texto-sec)">
+          ${a.c.map(x=>`<li style="margin:5px 0">${x}</li>`).join('')}
+        </ul>
+      </div>
+    </div>`).join('');
+
+  // Experiencia / Trayectoria
+  document.getElementById('contExperiencia').innerHTML = t.experiencia.map((e,i) => `
+    <div class="emp${i===0?' abierto':''}" id="${e.id || 'emp_'+i}">
+      <div class="cab" onclick="toggleAcordeon(this)">
+        <div class="titulo-exp">
+           <div>
+             <h3>${e.tit}</h3>
+             <div class="sub">${e.sub}</div>
+           </div>
+           <div style="display:flex;align-items:center;gap:10px">
+             <span class="fecha">${e.fec}</span>
+             <span class="icono">＋</span>
+           </div>
+        </div>
+      </div>
+      <div class="cuerpo">
+        ${e.desc ? `<p style="font-size:.88rem;color:var(--texto-mut);margin:8px 0">${e.desc}</p>` : ''}
+        <ul>${e.list.map(l => `<li>${l}</li>`).join('')}</ul>
+      </div>
+    </div>`).join('');
+
+  // Proyectos
+  document.getElementById('gridProyectos').innerHTML = t.proyectos.map((p,i) => `
+    <div class="proyecto" id="proy_${i}" data-project-index="${i}" tabindex="0" role="button" aria-haspopup="dialog" onclick="abrirModalProyecto(${i})">
+      <div class="canvas-cont">
+        ${vectorBlueprints[i] || ''}
+        <div class="icono-pro">${iconosProyectos[i] || '⚙️'}</div>
+      </div>
+      <div class="proyecto-body">
+        <small>${t.titulos.proyDest}</small>
+        <h3>${p.t}</h3>
+        <p>${p.d}</p>
+        
+        <div class="proy-star-preview">
+          <div><b>${ui.challenge}</b> ${p.alcance ? p.alcance.substring(0, 80) + '...' : ''}</div>
+          <div><b>${ui.impact}</b> ${p.cliente ? p.cliente.substring(0, 80) + '...' : ''}</div>
+        </div>
+
+        <div class="badge-sector">
+          <span>🏭 ${p.sec}</span>
+          <span style="color:var(--dorado);font-weight:700">${t.titulos.hoverDet.replace(/[()]/g,'')} →</span>
+        </div>
+      </div>
+    </div>`).join('');
+
+  // Tecnologías / Filtros
+  document.getElementById('filtrosTech').innerHTML = t.catsTech.map(([k,l],i) => 
+    `<button class="${i===0?'activo':''}" data-cat="${k}" onclick="filtrarTech(this)">${l}</button>`
+  ).join('');
+
+  document.getElementById('techWrap').innerHTML = techsBase.map(th => {
+    return `<span data-cat="${th.c}" onclick="buscarTech(this.textContent)" title="${ui.search}">${th.n}</span>`;
+  }).join('');
+
+  // Fortalezas
+  document.getElementById('fortaWrap').innerHTML = t.fortalezas.map(f => `
+    <div class="forta">
+      <div class="fila"><span>${f.n}</span><span style="color:var(--dorado);font-family:monospace">${f.v}%</span></div>
+      <div class="pista"><div class="barra" data-v="${f.v}"></div></div>
+    </div>`).join('');
+
+  document.getElementById('footerText').innerHTML = t.footer;
+
+  setTimeout(() => {
+    document.querySelectorAll('section.visible .barra').forEach(b => {
+      b.style.width = b.dataset.v + '%';
+    });
+  }, 80);
+}
+
+function toggleAcordeon(el) {
+  el.parentElement.classList.toggle('abierto');
+}
+
+function saltarASeccion(targetId, nombreTag) {
+  const el = document.querySelector(targetId);
+  if (el) {
+    const parentAcc = el.closest('.acordeon, .emp');
+    if (parentAcc) {
+      parentAcc.classList.add('abierto');
+    }
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    mostrarToast(`${uiLocales[idiomaActual].navigating}: ${nombreTag}`);
+    
+    el.classList.remove('destello-activo');
+    void el.offsetWidth;
+    el.classList.add('destello-activo');
+    setTimeout(() => el.classList.remove('destello-activo'), 2600);
+  }
+}
+
+function direccionarASector(sectorKey) {
+  const info = direccionamientoSectores[sectorKey];
+  if (!info) return;
+
+  const t = i18n[idiomaActual];
+  const sector = (t.sectores.lista || []).find(s => s.id === sectorKey);
+  mostrarToast(`📍 ${sector ? sector.n : info.nombre}`);
+
+  if (info.proyId) {
+    const proyCard = document.getElementById(info.proyId);
+    if (proyCard) {
+      proyCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      proyCard.classList.remove('destello-activo');
+      void proyCard.offsetWidth;
+      proyCard.classList.add('destello-activo');
+      setTimeout(() => proyCard.classList.remove('destello-activo'), 2600);
+    }
+  }
+
+  if (info.empId) {
+    const empBox = document.getElementById(info.empId);
+    if (empBox) {
+      const parentExp = empBox.closest('.emp');
+      if (parentExp) parentExp.classList.add('abierto');
+      empBox.classList.remove('destello-activo');
+      void empBox.offsetWidth;
+      empBox.classList.add('destello-activo');
+      setTimeout(() => empBox.classList.remove('destello-activo'), 2600);
+    }
+  }
+}
+
+function filtrarTech(btn) {
+  document.querySelectorAll('#filtrosTech button').forEach(x => x.classList.remove('activo'));
+  btn.classList.add('activo');
+  const cat = btn.dataset.cat;
+  document.getElementById('busqTech').value = '';
+  document.querySelectorAll('#techWrap span').forEach(s => {
+    s.classList.toggle('oculto', cat !== 'TODOS' && s.dataset.cat !== cat);
+  });
+}
+
+function buscarTech(txt) {
+  const query = txt.toLowerCase().trim();
+  document.getElementById('busqTech').value = txt;
+  document.querySelectorAll('#filtrosTech button').forEach(x => x.classList.remove('activo'));
+  document.querySelectorAll('#filtrosTech button')[0].classList.add('activo');
+  document.querySelectorAll('#techWrap span').forEach(s => {
+    const coincide = s.textContent.toLowerCase().includes(query);
+    s.classList.toggle('oculto', !coincide);
+  });
+}
+
+function abrirModalContacto() {
+  document.getElementById('modalContacto').classList.add('abierto');
+  document.body.classList.add('modal-open');
+}
+
+function cerrarModales() {
+  document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('abierto'));
+  document.body.classList.remove('modal-open');
+}
+
+window.addEventListener('click', e => {
+  if (e.target.classList.contains('modal-overlay')) cerrarModales();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') cerrarModales();
+});
+
+function abrirModalProyecto(index) {
+  const t = i18n[idiomaActual];
+  const ui = uiLocales[idiomaActual];
+  const p = t.proyectos[index];
+  if (!p) return;
+  const cont = document.getElementById('modalProyContenido');
+
+  cont.innerHTML = `
+    <h3 id="modalProyTitulo">${p.t}</h3>
+    <div style="font-size:.8rem;color:var(--dorado);font-weight:700;margin-bottom:12px">${ui.sector}: ${p.sec}</div>
+    
+    <div style="height:150px;margin-bottom:14px;border-radius:8px;overflow:hidden;border:1px solid var(--tarjeta-borde)">
+      ${vectorBlueprints[index] || ''}
+    </div>
+
+    <div class="modal-star-box" style="border-left-color:var(--azul-claro)">
+      <strong style="color:var(--azul)">${t.titulos.starAlcance}</strong>
+      <p style="margin:0;color:var(--texto-sec)">${p.alcance || p.d}</p>
+    </div>
+
+    <div class="modal-star-box" style="border-left-color:var(--dorado)">
+      <strong style="color:var(--dorado)">${t.titulos.starCliente}</strong>
+      <p style="margin:0;color:var(--texto-sec)">${p.cliente}</p>
+    </div>
+
+    <div class="modal-star-box" style="border-left-color:var(--verde)">
+      <strong style="color:var(--verde)">${t.titulos.starDetalle}</strong>
+      <p style="margin:0;color:var(--texto)">${p.materiales}</p>
+    </div>
+
+    <a href="mailto:jobycad@gmail.com?subject=${encodeURIComponent(ui.projectMsg + p.t)}" class="m-btn-pri" style="margin-top:16px">
+      ${t.titulos.btnConsultarProy}
+    </a>
+  `;
+  document.getElementById('modalProyecto').classList.add('abierto');
+  document.body.classList.add('modal-open');
+}
+
+function copiarAlPortapapeles(texto) {
+  const textarea = document.createElement('textarea');
+  textarea.value = texto;
+  textarea.setAttribute('readonly', '');
+  textarea.style.position = 'absolute';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea);
+  textarea.select();
+  try {
+    document.execCommand('copy');
+    mostrarToast(uiLocales[idiomaActual].copied);
+  } catch (err) {
+    mostrarToast(uiLocales[idiomaActual].copyFail);
+  }
+  document.body.removeChild(textarea);
+}
+
+function mostrarToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('ver');
+  setTimeout(() => t.classList.remove('ver'), 2800);
+}
+
+function descargarVCard() {
+  const vcardData = 
+`BEGIN:VCARD
+VERSION:3.0
+N:Bernal Y.;Orlando;;;
+FN:Ing. Orlando Bernal Y.
+ORG:Ingeniería Mecánica & Diseño 3D
+TITLE:Ingeniero Mecánico (Diseño, Dibujo y Fabricación)
+EMAIL;TYPE=INTERNET:jobycad@gmail.com
+ADR;TYPE=WORK:;;Bogotá;Bogotá D.C.;;Colombia
+NOTE:Especialista en Dibujo, Diseño Mecánico 3D (Solid Edge, AutoCAD), Planos de Fabricación y Maquinaria Industrial (+22 Años).
+END:VCARD`;
+
+  const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Orlando_Bernal_Ingeniero_Mecanico.vcf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  mostrarToast(uiLocales[idiomaActual].vcf);
+}
+
+function contar(el, meta, dur = 1500, sufijo = "") {
+  let ini = null;
+  function paso(ts) {
+    if (!ini) ini = ts;
+    const p = Math.min((ts - ini) / dur, 1);
+    const actual = Math.floor(meta * (1 - Math.pow(1 - p, 3)));
+    el.textContent = actual.toLocaleString() + sufijo;
+    if (p < 1) requestAnimationFrame(paso);
+    else el.textContent = meta.toLocaleString() + sufijo;
+  }
+  requestAnimationFrame(paso);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('orlando_cv_lang') || 'es';
+  const sel = document.getElementById('selIdioma');
+  if (sel) sel.value = savedLang;
+  cambiarIdioma(savedLang);
+
+  const savedTheme = localStorage.getItem('orlando_cv_theme');
+  if (savedTheme === 'oscuro' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.body.classList.add('oscuro');
+    document.getElementById('btnTema').textContent = '☀️';
+  }
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.classList.add('visible');
+        en.target.querySelectorAll('.barra').forEach(b => b.style.width = b.dataset.v + '%');
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('section').forEach(s => obs.observe(s));
+
+  const head = document.querySelector('header');
+  const obsH = new IntersectionObserver(e => {
+    if (e[0].isIntersecting) {
+      contar(document.getElementById('cnt1'), 22, 1500, "+");
+      contar(document.getElementById('cnt2'), 18000, 1600, "+");
+      contar(document.getElementById('cnt3'), 5000, 1600, "+");
+      contar(document.getElementById('cnt4'), 9000, 1600, "+");
+      obsH.disconnect();
+    }
+  });
+  obsH.observe(head);
+
+  const enlaces = document.querySelectorAll('nav#menu a');
+  const obsMenu = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        enlaces.forEach(a => a.classList.toggle('activo', a.getAttribute('href') === '#' + en.target.id));
+      }
+    });
+  }, { rootMargin: '-35% 0px -55% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => obsMenu.observe(s));
+
+  const btnT = document.getElementById('btnTema');
+  btnT.addEventListener('click', () => {
+    document.body.classList.toggle('oscuro');
+    const esOscuro = document.body.classList.contains('oscuro');
+    btnT.textContent = esOscuro ? '☀️' : '🌙';
+    try { localStorage.setItem('orlando_cv_theme', esOscuro ? 'oscuro' : 'claro'); } catch(e){}
+  });
+
+  document.getElementById('btnImprimir').addEventListener('click', () => window.print());
+
+  const btnUp = document.getElementById('btnArriba');
+  window.addEventListener('scroll', () => btnUp.classList.toggle('ver', window.scrollY > 400));
+  btnUp.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+});
+</script>
+</body>
+</html>
